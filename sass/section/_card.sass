@@ -1,0 +1,220 @@
+.card-block-wrapper
+    // display: none
+    .product-slider-wrapper h2 
+        margin-bottom: 30px
+.card-block
+    text-align: left
+    padding: 15px 15px
+    @media(min-width:576px)
+        // padding: 15px 45px
+    @media(min-width:992px)
+        padding: 10px 30px
+    @media(min-width:1200px)
+        padding: 10px 70px
+    h2 
+        margin-bottom: 30px
+.card-block-top
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-direction: column
+    color: #231e1f
+    font-size: 14px
+    margin-bottom: 20px
+    @media(min-width:576px)
+        padding: 0 45px
+    @media(min-width:992px)
+        padding: 0
+        flex-direction: row
+        align-items: center
+.path
+    text-transform: uppercase
+.prod-code
+    padding: 10px
+    margin-top: 25px
+    max-height: 40px
+    min-width: 155px
+    border: 1px solid #b8a4dd
+    background-color: #ededed
+    @media(min-width:992px)
+        margin-top: 0
+.card
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    @media(min-width:992px)
+        flex-direction: row
+    .slick-arrow
+        display: none!important
+        @media(min-width:768px)
+            display: block!important
+.card-sliders
+    margin: 0 auto
+    @media(min-width:992px)
+        margin: 0
+    .card-slide
+        outline: none
+        cursor: pointer
+        // display: table-cell
+        // vertical-align: middle
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            // margin: 0 auto
+            display: block
+            // vertical-align: middle
+            border-radius: 15px
+            // height: 100%
+.card-slider-top-wrapper
+    position: relative
+    border: 1px solid #c6c6c6
+    border-radius: 15px
+    margin-bottom: 13px
+    width: 450px
+    height: 400px
+    display: flex
+    align-items: center
+    justify-content: center
+    .bx-wrapper
+        // height: 100%
+.card-slider-top
+    width: 100%
+    
+    // height: 100%
+    
+.card-slider-bottom
+    display: none
+    @media(min-width:992px)
+        display: flex
+        width: 450px
+        .card-slide
+            display: block
+            width: 85px
+            height: 85px
+            border: 1px solid #c6c6c6
+            border-radius: 15px
+            z-index: 1
+            margin-right: 3px
+            overflow: hidden
+            &:last-child
+                margin-right: 0px
+            img
+                max-width: 100%
+                height: 100%
+                margin: 0 auto
+                z-index: -1
+    
+#bx-pager a.active
+    border: 2px solid $red
+    border-radius: 15px
+.card-info
+    width: 450px
+    margin: 0 auto
+    @media(min-width:992px)
+        margin: 0
+        width: 48%   
+.card-name
+    width: 430px
+    color: #3c3c3b
+    font-size: 24px
+    margin: 10px 0 15px
+    // font-weight: 600
+.card-code
+    color: #b2b2b2
+    margin-bottom: 20px
+    @media(min-width:992px)
+        margin-bottom: 0
+.card-price
+    color: #3c3c3b
+    font-size: 22px
+    font-weight: 700
+    margin: 15px 0
+.card-warranty
+    color: #666666
+.card-buttons
+    display: flex
+    align-items: center
+    margin: 20px 0 60px  
+    @media(min-width:992px)
+        margin: 30px 0
+    .form-submit
+        width: 170px
+        height: 50px
+        font-size: 22px
+        background-color: $green
+        margin: 0 30px 0 0
+        text-transform: uppercase
+    .to-wishes
+        cursor: pointer
+        span 
+            color: #878787
+            border-bottom: 1px dotted #333
+            margin-left: 5px   
+.card-table
+    width: 375px
+    border: 1px solid #c6c6c6
+    ol
+        list-style-type: none
+        counter-reset: num
+    li
+        font-size: 14px
+        margin: 10px 0
+        padding-top: 5px
+        position: relative 
+        &::before
+            position: absolute
+            left: -20px
+            content: counter(num) '. '
+            counter-increment: num
+            color: #b8a4dd
+            font-weight: 700
+            padding-right: 10px
+.card-table-title
+    border-bottom: 1px solid #c6c6c6
+    color: #231e1f
+    padding: 10px 40px
+    position: relative
+    &::before
+        position: absolute
+        left: 20px
+        top: 50%
+        transform: translateY(-50%)
+        content: ''
+        width: 8px
+        height: 8px
+        border-radius: 4px
+        background-color: $green
+.card-tabs-wrapper
+    text-align: left
+.card-tabs
+    display: flex
+    flex-direction: column
+    margin: 20px 
+    @media(min-width:768px)
+        flex-direction: row
+        margin: 50px 70px 10px
+.card-tab
+    margin-right: 40px
+    margin-top: 5px
+    span
+        cursor: pointer
+        font-size: 18px
+        font-weight: 600
+        border-bottom: 1px dotted #333
+        @media(min-width:768px)
+            // font-weight: 400
+.card-tab.active
+    span
+        border: none
+        color: $red
+.tabs-content
+    border-top: 1px solid #c6c6c6
+    border-bottom: 1px solid #c6c6c6
+    background-color: #f7f4ec
+    padding: 30px 20px
+    @media(min-width:768px)
+        padding: 30px 50px 30px 40px
+    @media(min-width:1100px)
+        padding: 30px 90px 50px 70px
+

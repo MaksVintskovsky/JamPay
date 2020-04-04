@@ -1,0 +1,210 @@
+.basket
+    // display: none
+    width: 440px
+    
+    margin: 35px auto
+    color: #333
+    font-weight: 700
+    text-align: left
+    @media(min-width:992px)
+        margin: 0
+        width: 100%
+        padding: 40px 30px 20px
+    .flex
+        flex-direction: column
+        justify-content: space-between
+        @media(min-width:992px)
+            flex-direction: row
+.basket-title
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 10px
+.basket-clear
+    color: #0089d5
+    font-size: 18px
+    font-weight: 400
+    border-bottom: 1px dotted #0089d5
+    margin-bottom: 5px
+    cursor: pointer
+    position: relative
+    &::after
+        position: absolute
+        content: '+'
+        width: 18px
+        font-size: 22px
+        font-weight: 400
+        transform: rotate(45deg)
+.basket-goods
+    margin-right: 25px
+.basket-item
+    display: flex
+    position: relative
+    border: 1px solid #c6c6c6
+    border-radius: 15px
+    margin-top: 20px
+.basket-item_img
+    min-width: 145px
+    max-width: 145px
+    border-left: 1px solid #c6c6c6
+    border-right: 1px solid #c6c6c6
+    margin-left: 12px
+    img 
+        width: 100%
+.basket-item_info
+    margin: 20px auto
+    @media(min-width:992px)
+        margin: 30px 30px 30px 20px
+.basket-item_title
+    width: 210px
+    font-size: 12px
+    font-weight: 700
+.basket-item_code
+    color: #b2b2b2
+    font-size: 14px
+    margin: 15px 0
+.info-right
+    @media(min-width:1200px)
+     margin-left: 30px
+.basket-item_price
+    display: flex
+    align-items: center
+.basket-item_count
+    display: flex
+    align-items: center
+.basket-item_count-dell, .basket-item_count-add
+    padding: 0 2px
+    font-size: 20px
+    color: $purple
+    cursor: pointer
+// .basket-item_count-add
+
+.basket-item_count-value
+    width: 27px
+    height: 21px
+    border-radius: 8px
+    border: 1px solid #c6c6c6
+    padding-left: 10px
+    font-size: 12px
+    font-weight: 700
+    color: #000
+.basket-price_num
+    font-size: 14px
+    margin-left: 40px
+    color: #000
+.basket-item_close
+    position: absolute
+    top: 50%
+    right: -25px
+    transform: translateY(-50%)
+.basket-total
+    padding: 40px 45px 20px
+    margin-top: 30px
+    font-size: 14px
+    font-weight: 600
+    color: #666666
+    // max-height: 270px
+    @media(min-width:992px)
+        // width: 300px
+        margin: 0 auto
+        padding: 40px 30px 20px 175px
+    strong 
+        font-weight: 700
+        color: #000
+    .total-goods, .total-delivery, .total
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-bottom: 5px
+    .total-goods
+    .total-delivery
+        border-bottom: 1px solid #333333
+        margin-bottom: 7px
+    .total
+#basket_submit
+    height: 45px
+    background-color: $green
+    text-transform: uppercase
+    font-size: 16px
+    font-weight: 600
+    margin-top: 35px
+    @media(min-width:992px)
+        width: 230px
+    @media(min-width:1100px)
+        width: 270px
+.continue
+    text-align: center
+    margin-top: 5px
+    cursor: pointer
+    span
+        border-bottom: 1px dotted #333
+
+.basket-form
+    background-color: #f0f0f0
+    border-radius: 15px
+    padding: 40px 50px 20px
+    margin-top: 30px
+    font-size: 14px
+    font-weight: 600
+    color: #666666
+    @media(min-width:992px)
+        max-width: 290px
+        margin-top: 50px
+        margin-right: -10px
+        padding: 40px 30px 20px
+    @media(min-width:1100px)
+        margin-right: 0
+        max-width: 330px
+        // width: 360px
+    .form-input
+        width: 330px
+        @media(min-width:992px)
+            width: 230px
+        @media(min-width:1100px)
+            width: 270px
+     
+.basket-form-title
+    font-size: 22px
+    font-weight: 700
+    margin-bottom: 15px
+.payment_type
+    margin: 10px 0 20px 20px
+
+.radio
+    margin-bottom: 10px
+    input
+        position: absolute
+        z-index: -1
+        opacity: 0
+        margin: 10px 0 0 7px
+
+.radio__text
+	position: relative
+	padding: 0 0 0 35px
+	cursor: pointer
+
+.radio__text:before
+    content: ''
+    position: absolute
+    top: -1px
+    left: 0
+    width: 18px
+    height: 18px
+    border: 1px solid #CDD1DA
+    border-radius: 4px
+    background: #ffffff
+.radio__text:after
+	content: ''
+	position: absolute
+	top: 4px
+	left: 5px
+	width: 8px
+	height: 8px
+	border-radius: 3px
+	background: #b8a4dd
+	opacity: 0
+	transition: .2s
+
+.radio input:checked + .radio__text:after 
+	opacity: 1
+
