@@ -40,17 +40,17 @@ html
 	min-width: 480px
 	width: 100%
 body
-	width: 100%
-	min-width: 480px
-	max-width: 1200px
+	// width: 100%
+	min-width: 640px
+	max-width: 1440px
 	margin: 0 auto
-	font-family: 'Gilroy', sans-serif
-	font-size: 16px
-	font-weight: 600
+	font-family: 'Oswald', sans-serif
+	font-size: 17px
+	font-weight: 400
 	line-height: 1.2
 	text-align: center
-	color: #666666
-	position: relative
+	color: #87979b
+	// position: relative
 a
 	text-decoration: none
 	color: inherit
@@ -61,17 +61,26 @@ a
 		text-decoration: none
 		color: $red
 	
-.btn
-	width: 270px
-	margin: 0 auto
-	a 
-		display: block
-		font-size: 14px
-		padding: 10px 20px
-		border-radius: 10px
-		color: #fff
-		&:hover 
-
+button
+	display: block
+	width: 158px
+	height: 28px
+	border: none
+	background-color: #42b9c0
+	color: #ffffff
+	font-size: 13px
+	font-weight: 400
+	margin: 10px auto
+	&:focus, &:active, &:hover
+		background-color: darken(#42b9c0, 10%)
+	@media(min-width:768px)
+		width: 138px
+	@media(min-width:868px)
+		width: 158px
+.btn-gray
+	background-color: $gray
+	&:focus, &:active, &:hover
+		background-color: darken(#87979b, 10%)
 ul, li 
 	margin: 0
 	padding: 0
@@ -94,60 +103,80 @@ p
 	color: #706f6f
 	font-size: 14px
 	font-weight: 400
-	line-height: 25px
+	line-height: 1.2
 	text-align: left
-
+input
+	height: 26px
 input, textarea
 	outline: none
-	padding-left: 15px
-	text-overflow: ellipsis
+	padding-left: 7px
+	font-size: 13px
+	font-weight: 300
+	border: 1px solid #87979b
+
+	// text-overflow: ellipsis
 input::-webkit-input-placeholder 
-	color: #666666
+	// color: #666666
 	font-size: 12px
-	font-weight: 600
+	// font-weight: 600
 
 input::-moz-placeholder /* Firefox 18- */
-	color: #666666
+	// color: #666666
 	font-size: 12px
-	font-weight: 600
+	// font-weight: 600
 
 input::-moz-placeholder /* Firefox 19+ */
-	color: #666666
+	// color: #666666
 	font-size: 12px
-	font-weight: 600
+	// font-weight: 600
 
 input::-ms-input-placeholder 
-	color: #666666
+	// color: #666666
 	font-size: 12px
-	font-weight: 600
+	// font-weight: 600
 
 textarea::-webkit-input-placeholder 
 	padding-top: 5px
-	color: #666666
+	// color: #666666
 	font-size: 12px
-	font-weight: 600
+	// font-weight: 600
 textarea:-moz-placeholder  /* Firefox 18- */
 	padding-top: 5px
-	color: #666666 
+	// color: #666666 
 	font-size: 12px
-	font-weight: 600
+	// font-weight: 600
 textarea::-moz-placeholder   /* Firefox 19+ */
 	padding-top: 5px
-	color: #666666 
+	// color: #666666 
 	font-size: 12px
-	font-weight: 600
+	// font-weight: 600
 textarea:-ms-input-placeholder   
 	padding-top: 5px
-	color: #666666
+	// color: #666666
 	font-size: 12px
-	font-weight: 600
+	// font-weight: 600
 
 
-.no-mobile_span
+.d-n-mob-span
 	display: none
-	@media(min-width:992px)
+	@media(min-width:768px)
 		display: inline
+.d-n-desc
+	@media(min-width:768px)
+		display: none!important
+.d-n-mob
+	display: none
+	@media(min-width:768px)
+		display: block!important
 .flex
 	display: flex
+.small-text
+	font-size: 13px
+	font-weight: 300
+// .m-auto	
+// 	margin: 0 auto
+.d-b
+	display: block!important
+
 
 
