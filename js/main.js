@@ -7,10 +7,7 @@ $(document).ready(function(){
   // });
 
   $('.card-slider-top').bxSlider({
-    // nextText: '<img src="img/slider/arr-violet_right.png">',
-    // prevText: '<img src="img/slider/arr-violet_left.png">',
-    // pager: false,
-    speed: 300,
+    // speed: 300,
     pagerCustom: '#bx-pager'
   });
  
