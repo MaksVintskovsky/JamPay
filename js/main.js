@@ -7,7 +7,8 @@ $(document).ready(function(){
   // });
 
   $('.card-slider-top').bxSlider({
-    // speed: 300,
+    speed: 300,
+    controls: false,
     pagerCustom: '#bx-pager'
   });
  
