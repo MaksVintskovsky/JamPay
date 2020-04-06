@@ -1,16 +1,10 @@
 
 $(document).ready(function(){
 
-  let menu = $('nav'),
-    bg = $('.bg-popup'),
-    popup = $('.popup'),
-    filter = $('.filter');
 
-  $('.main-slider').bxSlider({
-    // nextText: '<img src="img/slider/slide-right_arrow.png">',
-    // prevText: '<img src="img/slider/slide-left_arrow.png">',
-    speed: 300
-  });
+  // $('.main-slider').bxSlider({
+  //     speed: 300
+  // });
 
   $('.card-slider-top').bxSlider({
     // nextText: '<img src="img/slider/arr-violet_right.png">',
@@ -20,45 +14,28 @@ $(document).ready(function(){
     pagerCustom: '#bx-pager'
   });
  
-  $('.product-slider').owlCarousel({
-    dots: false,
-    nav: true,
-    loop:true,
-    navText: ["<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>","<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>"],
-    responsive:{
-      0:{
-          items:1
-      },
-      768:{
-          items:2
-      },
-      940:{
-          items:3
-      },
-      1200:{
-          items:4
-      }
-    }
-  });
+  // $('.product-slider').owlCarousel({
+  //   dots: false,
+  //   nav: true,
+  //   loop:true,
+  //   navText: ["<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>","<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>"],
+  //   responsive:{
+  //     0:{
+  //         items:1
+  //     },
+  //     768:{
+  //         items:2
+  //     },
+  //     940:{
+  //         items:3
+  //     },
+  //     1200:{
+  //         items:4
+  //     }
+  //   }
+  // });
 
-  $('.views-slider').owlCarousel({
-    dots: false,
-    nav: true,
-    loop:true,
-    navText: ["<img src='img/slider/arr-violet_left.png' class='product-slider-prev' alt='1'>",
-              "<img src='img/slider/arr-violet_right.png' class='product-slider-next' alt='2'>"],
-    responsive:{
-      0:{
-          items:1
-      },
-      810:{
-          items:2
-      },
-      1200:{
-          items:3
-      }
-    }
-  });
+ 
       // :::::::::::: Search :::::::::::::
   $('.search').on('click', function(){
     $('.search-input').show();
