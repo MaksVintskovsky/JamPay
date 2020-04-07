@@ -8147,7 +8147,12 @@ nav {
       width: 65%; } }
 
 .card-slide img {
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .card-slide img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5); }
 
 .card-slider-bottom {
   width: 100%;
@@ -8261,6 +8266,8 @@ nav {
   @media (min-width: 768px) {
     .card-tabs {
       margin: 40px 20px 10px; } }
+  .card-tabs a:hover {
+    color: inherit; }
 
 .card-tab {
   width: 145px;
