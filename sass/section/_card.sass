@@ -14,7 +14,7 @@
         flex-direction: row
 .card-slider-top-wrapper
     max-width: 800px
-    border: 1px solid $gray
+    // border: 1px solid $gray
     margin: 0 10px 0 10px
     @media(min-width:768px)
         margin: 0 10px 0 10px
@@ -62,6 +62,7 @@
 .product-num
 .product-price
     margin: 10px 0
+    font-size: 20px
 .card-info-left
     select 
         width: 65px
@@ -71,9 +72,13 @@
         font-weight: 300
         border-radius: 0
         border: 1px solid $gray
+    option, .form-control
+        color: $gray
     .form-group
         display: inline-block
         margin-bottom: 10px
+    .form-control
+
 .card-info-right
     flex-direction: column
     justify-content: space-between
@@ -100,6 +105,14 @@
     padding: 4px
     background-image: linear-gradient(150deg, #ffffff 0%, #e6e6e6 99.99990000000001%, #e6e6e6 100%)
     cursor: pointer
+.tab-content
+    font-size: 13px
+    font-weight: 300
+    .tab-title
+        margin: 20px 0 5px
+        font-size: 17px
+        font-weight: 400
+
 .card-tab.active
     background-image: none
     background-color: $gray
@@ -113,7 +126,7 @@
         justify-content: space-between
 .comment-left
     width: 95%
-    margin: 20px auto
+    margin: 20px auto 0
     .stars
         margin-top: 10px
         div
@@ -132,9 +145,10 @@
         width: 70%
     @media(min-width:992px)
         width: 48%
+        // margin: 0 auto
 .comment-right
     width: 95%
-    margin: 0px auto
+    margin: 20px auto
     form 
         >div
             display: inline-block
@@ -150,6 +164,8 @@
             width: 100%
         textarea
             height: 50px
+    .chat
+        margin-top: 20px
     @media(min-width:768px)
         width: 70%
     @media(min-width:992px)
@@ -184,3 +200,81 @@ input.check + label:before
 
 input.check:checked + label:before
     color: #000
+
+
+ul 
+    padding: 0
+    margin: 0
+    list-style-type: none
+
+.select 
+    display: inline-block
+    vertical-align: top 
+    max-width: 245px
+    width: 100%
+    position: relative
+
+
+.select-wrap 
+	max-width: 700px
+	width: 100%
+	margin: 20px auto
+
+
+.select-wrap select 
+	margin: 20px
+
+
+.select__gap
+    // background: transparent
+    color: $gray
+    border: 1px solid $gray
+    text-transform: uppercase
+    height: 26px
+    width: 65px
+    cursor: pointer
+    position: relative
+    padding: 5px 10px
+.on.select__gap, .select__gap:hover
+    color: $gray
+.select__list 
+    position: absolute
+    background: #fff
+    border: 1px solid $gray
+    margin: 0px 0
+    width: 100%
+.select__list.on 
+	display: block
+.select__item span
+    display: block
+    padding: 5px 10px
+    cursor: pointer
+.select__item.selected,
+.select__item span:hover
+    color: #fff
+    background-color: $gray
+.select__gap::after 
+	content: ''
+	display: block
+	width: 4px
+	height: 6px
+	position: absolute
+	right: 5px
+	top: 50%
+	margin-top: -3px
+	border-left: 3px solid transparent
+	border-right: 3px solid transparent
+	border-top: 6px solid $gray
+	-webkit-transition: all .27s ease-in-out
+	     -o-transition: all .27s ease-in-out
+	        transition: all .27s ease-in-out
+	-webkit-transform: rotate(0deg)
+	    -ms-transform: rotate(0deg)
+	     -o-transform: rotate(0deg)
+	        transform: rotate(0deg)
+.on.select__gap:after 
+	-webkit-transform: rotate(180deg)
+	    -ms-transform: rotate(180deg)
+	     -o-transform: rotate(180deg)
+	        transform: rotate(180deg)
+
