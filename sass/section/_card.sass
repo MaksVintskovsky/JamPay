@@ -4,9 +4,10 @@
     margin: 0 10px 10px
 .card
     text-align: left
-    padding: 10px 15px
+    padding: 10px 0px
+    border: none
     @media(min-width:868px)
-        padding: 10px 20px
+        padding: 10px 0px
 .card-wrapper
     flex-direction: column
     
@@ -77,7 +78,40 @@
     .form-group
         display: inline-block
         margin-bottom: 10px
-    .form-control
+    .card-dropdown
+        width: 65px
+        height: 26px
+        border: 1px solid $gray
+        position: relative
+        // display: inline-block
+        &::before
+            position: absolute
+            content: ""
+            width: 4px
+            height: 6px
+            right: 5px
+            top: 50%
+            margin-top: -3px
+            border-left: 3px solid transparent
+            border-right: 3px solid transparent
+            border-top: 6px solid #8a999c
+
+    .card-dropdown-menu
+        border-radius: 0
+        min-width: 100%
+        color: $gray
+        font-size: 13px
+        font-weight: 300
+        margin: 0
+        li 
+            padding: 3px 10px
+            &:hover
+                background-color: $gray
+                color: #fff
+    .dropdowns
+        margin-bottom: 10px
+        .small-text
+            margin-right: 10px
 
 .card-info-right
     flex-direction: column

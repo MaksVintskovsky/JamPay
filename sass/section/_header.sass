@@ -28,6 +28,7 @@ header
 
 .header-item
 	cursor: pointer
+	position: relative
 	@media(min-width:768px)
 		font-size: 15px
 	@media(min-width:992px)
@@ -46,6 +47,27 @@ header
 		color: $gray
 .header-item-text
 	display: inline-block
+.num-in-heart
+	position: absolute
+	right: -10px
+	top: 7px
+	font-size: 17px
+	@media(min-width:768px)
+		right: 11px
+		top: 3px
+	@media(min-width:992px)
+		top: 5px
+.num-in-bask
+	position: absolute
+	right: -10px
+	top: 7px
+	font-size: 17px
+	@media(min-width:768px)
+		right: auto
+		left: 10px
+		top: -2px
+	@media(min-width:992px)
+		top: -1px
 .search
 	// border-bottom: 1px solid $gray
 	
@@ -70,7 +92,8 @@ header
 		background: inherit
 		&:hover
 			color: $gray
-
+	img 
+		z-index: 2
 .search-img
 	// position: absolute
 	// left: 50%
@@ -79,16 +102,20 @@ header
 	position: relative
 	z-index: 1
 	width: 100%
-	&::after
+	&::after, &::before
 		position: absolute
 		content: ""
 		border-bottom: 1px solid $gray
-		width: 100%
+		width: 42%
 		top: 13px
-		left: 0
+		// left: 0
 		z-index: 1
-	img 
-		z-index: 2
+	&::after
+		right: 0
+	&::before
+		left: 0
+
+	
 		
 .search-input
 	display: none
@@ -119,6 +146,7 @@ header
 	display: none
 .dropdown-menu.show
 	display: block!important
+
 .close-menu
 	font-size: 40px
 	font-weight: 300
@@ -176,6 +204,9 @@ nav
 	font-size: 17px
 	width: 250px
 	overflow: visible
+	// left: -40px!important
+	right: 0!important
+	left: auto
 	
 	img 
 		width: auto
