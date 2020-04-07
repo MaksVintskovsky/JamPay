@@ -120,11 +120,11 @@
           </div>
           <div class="search"  onclick="hide_search();">
             <div class="search-img">
-              <img width="120px" src="img/header/search.png" alt="search">
+              <img width="30px" src="img/header/search.png" alt="search">
             </div>
             <form >
               <input type="search" class="form-input search-input">
-              <button type="submit">search</button>
+              <button type="submit"><img width="30px" src="img/header/search.png" alt="search"></button>
             </form>
           </div>
           <nav class="">
@@ -171,7 +171,7 @@
             <div class="flex">
               <div class="card-info-left">
                 <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
-                <div class="product-price">20 003 400,00 ₴</div>
+                <div class="product-price d-n-mob">20 003 400,00 ₴</div>
                 <div class="dropdowns flex">
                   <div class="small-text">Размер
                     <div class="card-dropdown dropdown-toggle" data-toggle="dropdown">
@@ -202,6 +202,7 @@
               <div class="card-info-right flex text-right">
                 <div class="product-stars"><img src="img/brands/stars.png" alt="s"></div>
                 <div class="product-like small-text"><img src="img/brands/heart.png" alt="">В избранные</div>
+                <div class="product-price d-n-desc">20 003 400,00 ₴</div>
                 <button  type="submit">В КОРЗИНУ</button>
               </div>
             </div>
@@ -275,32 +276,31 @@
                 <div class="text-center big-text"> НАПИШИТЕ ОТЗЫВ</div>
                 <div class="small-text text-center">(только для зарегистрированных)</div>
                 <form action="">
-                  <div>
+                  <div class=" form-group">
                     <label for="comment-name">ИМЯ</label><br>
-                    <input type="text" id="comment-name" name="name" placeholder="Name"><br>
+                    <input class=" form-control" type="text" id="comment-name" name="name" placeholder="Name">
                     <label for="comment-email">E-MAIL</label><br>
-                    <input type="text" id="comment-email" name="email" placeholder="E-mail">
+                    <input class=" form-control" type="text" id="comment-email" name="email" placeholder="E-mail">
                   </div>
-                  <div >
+                  <div class="form-group">
                     <div class="text-center">
                       <label >УКАЖИТЕ РЕЙТИНГ ПРОДУКТА</label><br>
                       <img src="img/stars/stars_2.png" alt=""><br>
                     </div>
-                    <label class="text-left" for="comment-phone">ТЕЛЕФОН (мобильный)</label><br>
-                    <input type="text" name="phone" id="comment-phone" class="form-input" placeholder="+380">
+                    <label class="text-left " for="comment-phone">ТЕЛЕФОН (мобильный)</label><br>
+                    <input type="text" name="phone" id="comment-phone" class="form-input form-control" placeholder="+380">
                   </div>
-              
                   <label>СООБЩЕНИЕ</label><br>
-                  <textarea name="message" class="form-textarea form-input" placeholder="Напишите сообщение"></textarea>
-                  <p class="small-text">Примечание: Ваш отзыв будет рассмотрен нашими сотрудниками и опубликован в течение 5 рабочих дней. ННтветят по
-                    электронной почте, поэтому, пожалуйста, убедитесь, что ваш электронный адрес </p>
-                  <div class="text-center d-b w-100 m-b-10"	>
+                  <textarea name="message" class="form-textarea form-input form-control" placeholder="Напишите сообщение"></textarea>
+                  <p class="small-text">Примечание: Ваш отзыв будет рассмотрен нашими сотрудниками и опубликован в течение 5 рабочих дней. 
+                    Вам ответят по электронной почте, поэтому, пожалуйста, убедитесь, что ваш электронный адрес корректный </p>
+                  <div class="  text-center d-b w-100 m-b-10"	>
                     <input type="checkbox" id="check" class="check" name="check" />
                     <label for="check">Я принимаю Вашу Политику конфиденциальностт</label><br>
                     <button type="submit">ОТПРАВИТЬ</button>
                   </div>
                 </form>
-                <div class="text-center chat"> ЧАТ С ПРОДАВЦОМ</div>
+                <div class="text-center chat big-text"> ЧАТ С ПРОДАВЦОМ</div>
                 <div class="small-text text-center">(только для зарегистрированных)</div>
                 <button type="submit">НАЧАТЬ</button>
               </div>

@@ -106,13 +106,17 @@ p
 	line-height: 1.2
 	text-align: left
 input
-	height: 26px
+	height: 26px!important
+	
 input, textarea
 	outline: none
-	padding-left: 7px
-	font-size: 13px
-	font-weight: 300
-	border: 1px solid #87979b
+	padding: 0 0 0 7px!important
+	font-size: 13px!important
+	font-weight: 300!important
+	border: 1px solid #87979b!important
+	border-radius: 0!important
+	&:focus
+		box-shadow: none!important
 
 	// text-overflow: ellipsis
 input::-webkit-input-placeholder 

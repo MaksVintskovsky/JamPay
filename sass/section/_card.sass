@@ -55,18 +55,20 @@
 .card-info>.flex
     justify-content: space-between
 .product-title
-    // font-size: 15px
     margin-top: 20px
     @media(min-width:768px)
         font-size: 15px
         margin-top: 0px
-        margin-bottom: 10px
+        margin-bottom: 15px
     @media(min-width:992px)
         font-size: 17px
 .product-num
 .product-price
-    margin: 10px 0
+    margin: 15px 0
     font-size: 20px
+    flex-grow: 2
+    @media(min-width:768px)
+        flex-grow: 1
 .card-info-left
     select 
         width: 65px
@@ -112,16 +114,24 @@
                 background-color: $gray
                 color: #fff
     .dropdowns
-        margin-bottom: 10px
+        margin: 20px 0 20px
         .small-text
             margin-right: 10px
+        @media(min-width:768px)
+            margin: 0px 0 20px
+.delivery-date
+    margin: 5px 0 20px
 
 .card-info-right
     flex-direction: column
     justify-content: space-between
+    margin-top: -20px
+    @media(min-width:768px)
+        margin-top: 0px
     .product-like
         margin: 10px 15px 0 0
-        flex-grow: 2
+        @media(min-width:768px)
+            flex-grow: 2
         img 
             margin-right: 10px
 
@@ -129,19 +139,21 @@
     text-align: left
 .card-tabs
     display: flex
-    margin: 10px 20px 10px
+    justify-content:  center
+    margin: 10px 0 10px
+    text-align: center
     @media(min-width:768px)
-        margin: 40px 20px 10px
+        margin: 40px 0 10px
     a:hover
         color: inherit
 .card-tab
     width: 145px
     border: 1px solid $gray
     text-align: center
-    margin-right: 5px
-    font-size: 13px
+    margin-right: 10px
+    font-size: 15px
     text-transform: uppercase
-    padding: 4px
+    padding: 6px
     background-image: linear-gradient(150deg, #ffffff 0%, #e6e6e6 99.99990000000001%, #e6e6e6 100%)
     cursor: pointer
 .tab-content
@@ -197,7 +209,6 @@
                 margin-right: 10px       
         label 
             font-size: 13px
-            font-weight: 400
             margin: 0
         input, textarea
             width: 100%
