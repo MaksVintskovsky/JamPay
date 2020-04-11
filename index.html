@@ -3,8 +3,8 @@
   <head>
       <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-      <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <!-- <meta name="viewport" content="width=device-width"> -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <!-- Sliders -->
     <link rel="stylesheet" type="text/css" href="libs//bxSlider/jquery.bxslider.css"/>
@@ -149,14 +149,14 @@
     <div class="container">
       <div class="breadcrumbs">Homepage -> Корзина</div>
       <div class="row">
-        <div class="basket col-12 col-lg-6 ">
+        <div class="basket col-12 col-xl-6 ">
           <div class="basket-bill btn-gradient"> СЧЕТ 1  (<span>Fastopt</span>) </div>
           <div class="flex basket-header">
             <span class="column_1">ПРОДУКТ</span>
             <span class="column_2">КОЛИЧЕСТВО</span>
             <span class="column_3">ВСЕГО</span>
           </div>
-          <div class="basket-items">
+          <div class="basket-items" id="scroll">
             <div class="basket-item-block flex">
               <div class="basket-item flex column_1">
                 <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
@@ -169,7 +169,25 @@
               </div>
               <div class="column_2">
                 <span>200</span>
-                <button>CHANGE</button>
+                <button onclick="open_modal();">CHANGE</button>
+              </div>
+              <div class="column_3">
+                <div class="">20 003 400,00</div>
+              </div>
+            </div>
+            <div class="basket-item-block flex">
+              <div class="basket-item flex column_1">
+                <div class="basket-item-img"><img src="img/basket/bask_2.jpg" alt=""></div>
+                <div class="basket-item-text text-left">
+                  <div class="product-title">SAMSUNG ADG 10</div>
+                  <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                  <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                  <div class="">ЦЕНА ЗА ЕДИНИЦУ: 180 800,00  ₴</div>
+                </div>
+              </div>
+              <div class="column_2">
+                <span>200</span>
+                <button onclick="open_modal();">CHANGE</button>
               </div>
               <div class="column_3">
                 <div class="">20 003 400,00</div>
@@ -187,7 +205,7 @@
               </div>
               <div class="column_2">
                 <span>200</span>
-                <button>CHANGE</button>
+                <button onclick="open_modal();">CHANGE</button>
               </div>
               <div class="column_3">
                 <div class="">20 003 400,00</div>
@@ -222,12 +240,28 @@
             <button>ОФОРМИТЬ ЗАКАЗ</button>
           </div>
         </div>
-        <div class="basket col-12 col-lg-6">
+        <div class="basket col-12 col-xl-6">
           <div class="basket-bill btn-gradient"> СЧЕТ 2  (<span>ФОП Петренко Петр</span>) </div>
         </div>
       </div>
 
     </div>
+    <form class="modal-change">
+      <div class="text-center">CHANGE QUANTITY OF PRODUCC</div>
+      <div class="flex justify-content-around align-items-center mt-2">
+        <div class="product-title text-left">SAMSUNG ADG 10</div>
+        <div class="basket-item_count flex">
+          <span class="basket-item_count-dell">-</span>
+          <input type="text" class="basket-item_count-value text-center" value="15">
+          <span class="basket-item_count-add">+</span>
+        </div>
+      </div>
+      <div class="btn-group">
+
+        <button class="btn-gray" onclick="close_modal();">ОТМЕНИТЬ</button>
+        <button>CОХРАНИТЬ</button>
+      </div>
+    </form>
 
    
         <!--::::::::::::: // Basket::::::::::::: !-->

@@ -12,17 +12,30 @@
     
     padding: 10px 0 5px
 .column_1
-    width: 60%
+    width: 64%
 .column_2
-    width: 20%
+    width: 16%
 .column_3
     width: 20%
 .basket-items
     border-bottom: 1px solid $gray
     border-top: 1px solid $gray
+    max-height: 242px
+    overflow-y: scroll
     button
         width: 60px
         margin: 0 auto
+#scroll::-webkit-scrollbar 
+    width: 5px
+#scroll::-webkit-scrollbar-thumb 
+    background: $gray
+#scroll::-webkit-scrollbar-track 
+    opacity: 1
+    border: 1px solid $gray
+#scroll::-webkit-scrollbar-thumb:hover 
+    background: #777
+    
+
 .basket-item-block
     align-items: center
     padding: 20px 0
@@ -58,3 +71,38 @@
         width: 158px
     @media(min-width:992px)
         padding: 0
+.modal-change
+    display: none
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 360px
+    border: 1px solid $gray
+    padding: 10px 15px 20px
+    background-color: #fff
+    font-size: 13px
+    z-index: 2
+    .product-title
+        font-size: 13px
+        margin: 0
+    input 
+        width: 60px
+        margin: 0 5px
+        font-weight: 400
+    .btn-group
+        margin-top: 15px
+    button
+        margin: 0
+        &:first-child
+            margin-right: 10px
+.basket-item_count-dell,
+.basket-item_count-add
+    font-size: 30px
+    line-height: 0.6
+    display: inline-block
+    border: 1px solid $gray
+    width: 25px
+    height: 25px
+    cursor: pointer
+.basket-item_count-add
+    line-height: 0.8
