@@ -1,38 +1,37 @@
 <!doctype html>
 <html lang="en">
   <head>
-      <!-- Required meta tags -->
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <!-- <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <!-- Sliders -->
+    <!-- Sliders -->
     <link rel="stylesheet" type="text/css" href="libs//bxSlider/jquery.bxslider.css"/>
     <link rel="stylesheet" href="libs/OwlCarousel/owl.carousel.css">
     <link rel="stylesheet" href="libs/OwlCarousel/owl.theme.default.css">
 
-      <!-- Bootstrap, CSS -->
+    <!-- Bootstrap, CSS -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  	<link rel="stylesheet" href="build/css/main.css">
+    <link rel="stylesheet" href="build/css/main.css">
 
     <link rel="shortcut icon" href="img/header/logo.png"  type="image/x-icon" />
 
     <title>JamPay</title>
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	    <!--[if lt IE 9]>
-	      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
 
-      <!--::::::::::::: Header::::::::::::: !-->
-    <header class="flex align-items-center ">
+    <!--::::::::::::: Header::::::::::::: !-->
+    <header class="flex align-items-center text-center">
       <div class="container flex align-items-center">
         <a href="index.html" ><img class="header-logo d-n-mob-span" src="img/header/logo.png" alt=""></a>
-        <div class="header ">
+        <div class="header text-center">
           <div class="header-top flex ">
             <div class="header-item d-n-mob-span">+38 05050 69696</div>
             <div class="dropdown d-n-desc">
@@ -45,7 +44,7 @@
                 <div class="menu-item"><a href="#">бренд</a></div><hr>
                 <div class="menu-item"><a href="#">обслуживание клиентов</a></div><hr>
                 <div class="menu-item"><a href="#">продать с нами</a></div><hr>
-                <div class="menu-item"><a href="#">о нас</a></div>
+                <div class="menu-item"><a href="#about">о нас</a></div>
                 <div class="close-menu">+</div>
               </div>
             </div>
@@ -106,7 +105,7 @@
                 <div class="num-in-heart">2</div>
               </div>
               <ul class=" dropdown-menu header-dropdown cab-dropdown">
-                <li><button class="btn-gray" onclick="close_cab();">ЗАКРЫТЬ</button></li>
+                <li><button class="my_button btn_gray" onclick="close_cab();">ЗАКРЫТЬ</button></li>
                 <li><a href="#"><img src="img/header/pers.png" alt="pers">МОЙ ПРОФИЛЬ</a></li>
                 <li><a href="#"><img src="img/header/story.png" alt="pers">ИСТОРИЯ ПОКУПОК</a></li>
                 <li><a href="#"><img src="img/header/like.png" alt="pers">ИЗБРАННЫЕ</a></li>
@@ -126,8 +125,8 @@
               <img width="30px" src="img/header/search.png" alt="search">
             </div>
             <form >
-              <input type="search" class="form-input search-input">
-              <button type="submit"><img width="30px" src="img/header/search.png" alt="search"></button>
+              <input type="search" class="my_input search-input">
+              <button class="my_button" type="submit"><img width="30px" src="img/header/search.png" alt="search"></button>
             </form>
           </div>
           <nav class="">
@@ -136,145 +135,162 @@
               <div class="menu-item"><a href="#">бренд</a></div>
               <div class="menu-item"><a href="#">обслуживание клиентов</a></div>
               <div class="menu-item"><a href="#">продать с нами</a></div>
-              <div class="menu-item"><a href="#">о нас</a></div>
+              <div class="menu-item"><a href="#about">о нас</a></div>
             </div>
           </nav>
         </div>
       </div>
     </header>
-        <!--::::::::::::: // Header::::::::::::: !-->
+    <!--::::::::::::: // Header::::::::::::: !-->
 
-
-
-        <!--:::::::::::::  Basket::::::::::::: !-->
-    <div class="container">
-      <div class="breadcrumbs">Homepage -> Корзина</div>
-      <div class="row">
-        <div class="basket col-12 col-xl-6 ">
-          <div class="basket-bill btn-gradient"> СЧЕТ 1  (<span>Fastopt</span>) </div>
-          <div class="flex basket-header">
-            <span class="column_1">ПРОДУКТ</span>
-            <span class="column_2">КОЛИЧЕСТВО</span>
-            <span class="column_3">ВСЕГО</span>
-          </div>
-          <div class="basket-items" id="scroll">
-            <div class="basket-item-block flex">
-              <div class="basket-item flex column_1">
-                <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
-                <div class="basket-item-text text-left">
-                  <div class="product-title">DMG MORI DMU 50</div>
-                  <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
-                  <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
-                  <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
-                </div>
-              </div>
-              <div class="column_2">
-                <span>200</span>
-                <button onclick="open_modal();">CHANGE</button>
-              </div>
-              <div class="column_3">
-                <div class="">20 003 400,00</div>
-              </div>
-            </div>
-            <div class="basket-item-block flex">
-              <div class="basket-item flex column_1">
-                <div class="basket-item-img"><img src="img/basket/bask_2.jpg" alt=""></div>
-                <div class="basket-item-text text-left">
-                  <div class="product-title">SAMSUNG ADG 10</div>
-                  <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
-                  <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
-                  <div class="">ЦЕНА ЗА ЕДИНИЦУ: 180 800,00  ₴</div>
-                </div>
-              </div>
-              <div class="column_2">
-                <span>200</span>
-                <button onclick="open_modal();">CHANGE</button>
-              </div>
-              <div class="column_3">
-                <div class="">20 003 400,00</div>
-              </div>
-            </div>
-            <div class="basket-item-block flex">
-              <div class="basket-item flex column_1">
-                <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
-                <div class="basket-item-text text-left">
-                  <div class="product-title">DMG MORI DMU 50</div>
-                  <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
-                  <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
-                  <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
-                </div>
-              </div>
-              <div class="column_2">
-                <span>200</span>
-                <button onclick="open_modal();">CHANGE</button>
-              </div>
-              <div class="column_3">
-                <div class="">20 003 400,00</div>
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-content-between">
-            <div class="basket-delivery text-left">
-              <span >ВВЕДИТЕ НОМЕР КУПОНА (если таковой имеется)</span>
-              <button class="btn-gradient">ИСПОЛЬЗОВАТЬ КУПОН</button>
-              <span >МЕТОД ОПЛАТЫ И АДРЕС ДОСТАВКИ</span>
-              <div class="mt-2 small-text">Оплата: кредитная карта.</div>
-              <div class=" small-text">Доставка: Новая Почта, КК</div>
-            </div>
-            <div class="basket-total flex">
-              <div class="flex text-left mr-3">
-                <span>СТОИМОСТЬ ТОВАРОВ: </span>
-                <span>СТОИМОСТЬ ДОСТАВКИ: </span>
-                <span class="big-text">ОБЩАЯ СТОИМОСТЬ: </span>
-              </div>
-              <div class="flex">
-                <span>20 022 200,00 ₴</span>
-                <span>200,00 ₴</span>
-                <span class="big-text">33 022 200,00 ₴</span>
-              </div>
-              
-            </div>
-          </div>
-          <div class="basket-buttons flex"> 
-            <button class="btn-gradient">ИЗМЕНИТЬ</button>
-            <button class="btn-gray">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-            <button>ОФОРМИТЬ ЗАКАЗ</button>
-          </div>
+    <!--::::::::::::: Carousel::::::::::::: !-->
+    <div class="container p-0">
+      <div class="first_slider_wrapper">
+        <div class="first_slider owl-carousel">
+          <div><a href="#"><img src="img/slider_1/1.jpg" alt="img"></a></div>
+          <div><a href="#"><img src="img/slider_1/2.jpg" alt="img"></a></div>
+          <div><a href="#"><img src="img/slider_1/3.jpg" alt="img"></a></div>
+          <div><a href="#"><img src="img/slider_1/4.jpg" alt="img"></a></div>
         </div>
-        <div class="basket col-12 col-xl-6">
-          <div class="basket-bill btn-gradient"> СЧЕТ 2  (<span>ФОП Петренко Петр</span>) </div>
+        <div class="banner">
+          <div class="banner_title">ПОКУПАЙ <br> В МАРКЕТПЛЕЙС <br>JAM PAY</div>
+          <div class="banner_center">​Jam Pay - лучшее со всего мира</div>
+          <button class="my_button btn_green">СМОТРЕТЬ КАТАЛОГ</button>
         </div>
       </div>
-
+      <div class="second_slider_wrapper">
+        <div class="second_slider owl-carousel">
+          <div><a href="#"><img src="img/slider_2/prom_001.jpg" alt="img"></a></div>
+          <div><a href="#"><img src="img/slider_2/prom_002.jpg" alt="img"></a></div>
+          <div><a href="#"><img src="img/slider_2/prom_003.jpg" alt="img"></a></div>
+          <div><a href="#"><img src="img/slider_2/prom_004.jpg" alt="img"></a></div>
+          <div><a href="#"><img src="img/slider_2/prom_005.jpg" alt="img"></a></div>
+          <div><a href="#"><img src="img/slider_2/prom_006.jpg" alt="img"></a></div>
+          <div><a href="#"><img src="img/slider_2/prom_007.jpg" alt="img"></a></div>
+          <div><a href="#"><img src="img/slider_2/prom_008.jpg" alt="img"></a></div>
+          <div><a href="#"><img src="img/slider_2/prom_009.jpg" alt="img"></a></div>
+          <div><a href="#"><img src="img/slider_2/prom_010.jpg" alt="img"></a></div>
+        </div>
+        <div class="second_slider_nav">
+          <div id="secondSliderNext"><img src="img/buttons/next.png" alt="arr"></div>
+          <div id="secondSliderPrev"><img src="img/buttons/prev.png" alt="arr"></div>
+        </div>
+      </div>
+      <div class="third_slider_wrapper text-center">
+        <h2 >Рекомендованно для вас</h2>
+        <div class="third_slider owl-carousel">
+          <a href="#">
+            <div class="slider_item">
+              <img src="img/slider_3/item1.webp" alt="img">
+              <div class="slider_item_title">Куртка-хуюртка</div>
+              <div class="slider_item_price">148,75</div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="slider_item">
+              <img src="img/slider_3/item2.webp" alt="img">
+              <div class="slider_item_title">Куртка-хуюртка</div>
+              <div class="slider_item_price">148,75</div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="slider_item">
+              <img src="img/slider_3/item3.webp" alt="img">
+              <div class="slider_item_title">Куртка-хуюртка</div>
+              <div class="slider_item_price">148,75</div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="slider_item">
+              <img src="img/slider_3/item4.webp" alt="img">
+              <div class="slider_item_title">Куртка-хуюртка</div>
+              <div class="slider_item_price">148,75</div>
+            </div>
+          </a>
+          
+        </div>
+      </div>
     </div>
-    <form class="modal-change">
-      <div class="text-center">CHANGE QUANTITY OF PRODUCC</div>
-      <div class="flex justify-content-around align-items-center mt-2">
-        <div class="product-title text-left">SAMSUNG ADG 10</div>
-        <div class="basket-item_count flex">
-          <span class="basket-item_count-dell">-</span>
-          <input type="text" class="basket-item_count-value text-center" value="15">
-          <span class="basket-item_count-add">+</span>
+
+    <!--::::::::::::: // Carousel::::::::::::: !-->
+
+
+    <!--:::::::::::::  About::::::::::::: !-->
+    <div id="about" class="about">
+      <h2 class="title text-center">О НАС</h2>
+      <p>Мы всегда стремимся в будущее. Как мы можем достичь его?.</p>
+      <p>Наш маркетплейс является специализированной торговой площадкой по продаже оборудования, бытовых и промышленных товаров для покупателей всего мира. 
+        Мы поможем разместить Ваш товар на сайте, организовать его онлайн продажи в сети интернет и обеспечить его продвижение на рынке.</p>
+      <p>Ваша компания получит огромную базу потребителей, отслеживание динамики цен и конкурентных предложений. 
+        Вы имеете возможность привлечь миллионы клиентов, провести маркетинговые исследования, выделить из них фокус-группы и расширить целевую аудиторию, которой интересен Ваш продукт. 
+        Вместе мы организуем рекламные компании Вашего товара в социальных сетях, медиа и популярных мессенджерах.</p>
+      <p>Мы гарантируем безопасный прием платежей от частных лиц и компаний. Предлагаем качественную доставку товара с участием логистических и курьерских компаний-партнеров.</p>
+      <p>Покупателю мы предоставляем возможность получения кредитных линий для покупки товара в маркетплейсе от наших банков-партнеров.</p>
+      <p>Для нас очень важно чтобы бренд JamPay имел безукоризненную репутацию и был символом инноваций.</p>
+    </div>
+    <!--::::::::::::: // About::::::::::::: !-->
+    
+    <!--::::::::::::: Slider::::::::::::: !-->
+
+    <!--::::::::::::: //Slider::::::::::::: !-->
+    
+
+    <!--::::::::::::: Footer::::::::::::: !-->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div id="contact_div" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12  info">
+            <h6 class="text-left">КОНТАКТЫ</h6>
+            <p>Jam Pay | Marketplace</p>
+            <p>пр. Гагарина, 4Б. Киев, Украина 50027 <br> Офис 503</p>
+            <p>Тел.: +38 09797 69696 / +38 05050 69696</p>
+            <div id="social_icon" class="text-left">
+                <a href="https://www.facebook.com/jampayofficial">
+                    <img alt="img" src="img/footer_icon/iconfinder_facebook_fb_face_book_5340250%20(1)_1.png">
+                </a>
+                <a href="https://www.instagram.com/jampayofficial/">
+                    <img alt="img" src="img/footer_icon/iconfinder_ig_instagram_insta_photo_5340248_1.png">
+                </a>
+                <a href="https://www.youtube.com/jampay">
+                    <img alt="img" src="img/footer_icon/iconfinder_youtube_youtuber_video_play_5340279_1.png">
+                </a>
+                <a href="tel:+380979769696" data-content="+380979769696" data-type="phone">
+                    <img alt="img" src="img/footer_icon/iconfinder_wa_whatsapp_message_communication_chat_5340246_1.png">
+                </a>
+                <a href="skype:Skype_User1">
+                    <img alt="img" src="img/footer_icon/iconfinder_skype_conference_video_call_5340272_1.png">
+                </a>
+                <a href="tel:+380979769696" data-content="+380979769696" data-type="phone">
+                    <img alt="img" src="img/footer_icon/iconfinder_telegram_social_media_network_chat_5340247_1.png">
+                </a>
+            </div>
+            <div id="cart_icon" class="text-left">
+                <img alt="img" src="img/footer_icon/iconfinder_363_Visa_Credit_Card_4518617_1.png">
+                <img alt="img" src="img/footer_icon/iconfinder_social_mastercard_406085_1.png">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+            <form id="main_form">
+                <h6>ОБРАТНАЯ СВЯЗЬ</h6>
+                <input class="form-footer" type="text" placeholder="Ваше имя" id="form_name">
+                <input class="form-footer" type="text" placeholder="Ваш E-mail" id="form_mail">
+                <textarea class="form-footer" type="text" rows="8" placeholder="Текст сообщения" id="form_text"></textarea>
+                <input type="button" id="form_button" value="ОТПРАВИТЬ">
+            </form>
+          </div>
         </div>
+        <br>
+        <hr>
+        <div id="faq" class="text-center">
+          <a href="service.html#faq">FAQ </a><span> | </span><a href="documents.html"> Политика конфиденциальности</a>
+        </div>
+        <hr>
       </div>
-      <div class="btn-group">
-
-        <button class="btn-gray" onclick="close_modal();">ОТМЕНИТЬ</button>
-        <button>CОХРАНИТЬ</button>
+      <div class="text-center" id="c">
+          © 2019 Jam Pay. Все права защищены
       </div>
-    </form>
-
-   
-        <!--::::::::::::: // Basket::::::::::::: !-->
-        
-        <!--::::::::::::: Slider::::::::::::: !-->
-  
-        <!--::::::::::::: //Slider::::::::::::: !-->
-       
-    
-        <!--::::::::::::: Footer::::::::::::: !-->
-    
-      <!--::::::::::::: //Footer::::::::::::: !-->
+    </div>
+    <!--::::::::::::: //Footer::::::::::::: !-->
 
     <!-- Optional JavaScript -->
 

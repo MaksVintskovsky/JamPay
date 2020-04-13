@@ -8,12 +8,13 @@ const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 // const less = require('gulp-less');
 const sass = require('gulp-sass');
+const gulpPug = require('gulp-pug');
 
 const cssFiles = [
-	// 'node_modules/normalize.css/normalize.css',
 	'./sass/main.sass',
-	'./libs/slick/slick.css',
-	'./libs/slick/slick-theme.css'
+	'./css/footer.css',
+	// './libs/slick/slick.css',
+	// './libs/slick/slick-theme.css'
 ];
 const jsFiles = [
 	'./js/main.js'
@@ -48,6 +49,7 @@ function watch(){
     });
 	gulp.watch('./sass/**/*.sass', styles)
 	gulp.watch('./js/**/*.js', scripts)
+	// gulp.watch('./app/*.pug', pug)
 	gulp.watch('./*.html').on('change', browserSync.reload)
 }
 function clean(){
@@ -55,6 +57,12 @@ function clean(){
 }
 // gulp.task('styles', styles);
 // gulp.task('scripts', scripts);
+function pug(){
+	return gulp.src('./app/*.pug')
+				.pipe(pug({pretty: true}))
+				.pipe(gulp.dest('./app'));
+}
+// gulp.task('pug', pug);
 gulp.task('watch', watch);
 gulp.task('build', gulp.series(clean,
 						gulp.parallel(styles, scripts)

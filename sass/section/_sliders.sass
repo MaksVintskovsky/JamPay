@@ -1,0 +1,82 @@
+.first_slider_wrapper
+	position: relative
+.banner
+	position: absolute
+	top: 0
+	bottom: 0
+	width: 480px
+	// height: 600px
+	color: #fff
+	background-color: rgba(47, 64, 80, 0.7)
+	z-index: 4
+	left: 10%
+	padding: 40px 40px
+	@media(min-width:768px)
+		padding: 60px 40px
+	@media(min-width:992px)
+		padding: 90px 40px
+	.banner_title
+		font-size: 30px
+		margin-bottom: 20px
+		@media(min-width:768px)
+			font-size: 46px
+			margin-bottom: 40px
+	.banner_center
+		font-size: 19px
+	.my_button
+		margin: 50px 0
+		height: 35px
+.first_slider
+	img 
+		width: 100%
+.second_slider_wrapper
+	position: relative
+	margin: 20px auto
+	width: 80%
+	img 
+		width: 100%
+	.slider_prev
+		position: absolute
+		top: 50%
+	.second_slider_nav
+		img 
+			width: 40px
+		div
+			z-index: 9
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			cursor: pointer
+	#secondSliderNext
+		// transform: translate(-50%, -50%)
+		right: 0
+	#secondSliderPrev
+		// transform: translate(-50%, -50%)
+		left: 0
+.third_slider_wrapper
+	background-image: url('../../img/slider_3/carousel3-fon.webp')
+	// width: 90%
+	padding: 40px 20px
+	margin: 0px auto
+	h2
+		text-transform: uppercase
+		color: #fff
+		margin-bottom: 20px
+	img
+		width: 100%
+	.slider_item
+		background-color: #fff
+.about
+	padding: 30px 40px
+	background-image: url('../../img/bg/about_us.jpg')
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	color: #fff
+	h2
+		color: #fff
+		margin-bottom: 30px
+	p
+		color: #fff
+	@media(min-width:992px)
+		padding: 50px 80px
