@@ -22,33 +22,112 @@ $(document).ready(function(){
     center: true,
     items: 1
   });
-  $('.second_slider').owlCarousel({
+  $('.second_slider_right').owlCarousel({
     dots: false,
     loop: true,
     autoplay: true,
     autoplayTimeout: 3500,
     autoplaySpeed: 1500,
-    center: true,
     margin: 20,
-    items: 3
-    
+    responsive : {
+      0 : {
+        items: 3 
+      },
+      768 : {
+        items: 4
+      },
+      992 : {
+        items: 5
+      }
+    }
   });
-  $("#secondSliderNext").click(function(){
-    $(".second_slider").trigger('next.owl.carousel', [500]);
-  })
-  $("#secondSliderPrev").click(function(){
-      $(".second_slider").trigger('prev.owl.carousel', [500]);
-  })
+  $('.second_slider_left').owlCarousel({
+    rtl:true,
+    dots: false,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplaySpeed: 1500,
+    margin: 20,
+    responsive : {
+      0 : {
+        items: 3
+      },
+      768 : {
+        items: 4
+      },
+      992 : {
+        items: 5
+      }
+    }
+  });
+  // $("#secondSliderNext").click(function(){
+  //   $(".second_slider").trigger('next.owl.carousel', [500]);
+  // })
+  // $("#secondSliderPrev").click(function(){
+  //     $(".second_slider").trigger('prev.owl.carousel', [500]);
+  // })
 
   $('.third_slider').owlCarousel({
     dots: false,
     nav: false,
     loop: true,
     autoplay: true,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 3800,
     autoplaySpeed: 1500,
     margin: 30,
-    items: 4
+    responsive : {
+      0 : {
+        items: 3 
+      },
+      768 : {
+        items: 4
+      },
+      992 : {
+        items: 6
+      }
+    }
+  });
+  $('.fourth_slider').owlCarousel({
+    rtl:true,
+    dots: false,
+    nav: false,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplaySpeed: 1300,
+    margin: 30,
+    responsive : {
+      0 : {
+        items: 3 
+      },
+      768 : {
+        items: 4
+      },
+      992 : {
+        items: 6
+      }
+    }
+  });
+  $('.fifth_slider').owlCarousel({
+    dots: false,
+    nav: false,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3500,
+    autoplaySpeed: 1300,
+    margin: 30,
+    responsive : {
+      0 : {
+        items: 3 
+      },
+      768 : {
+        items: 4
+      },
+      992 : {
+        items: 6
+      }
+    }
   });
 
  

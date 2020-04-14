@@ -8,7 +8,7 @@ const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 // const less = require('gulp-less');
 const sass = require('gulp-sass');
-const gulpPug = require('gulp-pug');
+const fileInclude = require('gulp-file-include');
 
 const cssFiles = [
 	'./sass/main.sass',
@@ -33,6 +33,13 @@ function styles(){
 				.pipe(gulp.dest('./build/css'))
 				.pipe(browserSync.stream());
 }
+function html(){
+	return gulp.src('./app/*.html')
+				.pipe(fileInclude({
+					prefix: '@@'
+				}))
+				.pipe(gulp.dest('./'))
+}
 function scripts(){
 	return gulp.src(jsFiles)
 				.pipe(concat('main.js'))
@@ -49,22 +56,18 @@ function watch(){
     });
 	gulp.watch('./sass/**/*.sass', styles)
 	gulp.watch('./js/**/*.js', scripts)
-	// gulp.watch('./app/*.pug', pug)
 	gulp.watch('./*.html').on('change', browserSync.reload)
+	gulp.watch('./app/**/*.html', html).on('change', browserSync.reload)
 }
 function clean(){
 	return del(['build/*']);
 }
 // gulp.task('styles', styles);
 // gulp.task('scripts', scripts);
-function pug(){
-	return gulp.src('./app/*.pug')
-				.pipe(pug({pretty: true}))
-				.pipe(gulp.dest('./app'));
-}
-// gulp.task('pug', pug);
+
 gulp.task('watch', watch);
+gulp.task('html', html);
 gulp.task('build', gulp.series(clean,
-						gulp.parallel(styles, scripts)
+						gulp.parallel(styles, scripts, html)
 					));
-gulp.task('dev',  gulp.series('build', 'watch'));
+gulp.task('dev',  gulp.series('build', 'watch', 'html'));
