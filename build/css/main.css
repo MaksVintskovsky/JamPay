@@ -8628,7 +8628,7 @@ ul {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 480px;
+  width: 360px;
   margin-top: 5px;
   color: #fff;
   background-color: rgba(47, 64, 80, 0.7);
@@ -8637,6 +8637,7 @@ ul {
   padding: 40px 40px; }
   @media (min-width: 768px) {
     .banner {
+      width: 480px;
       padding: 60px 40px; } }
   @media (min-width: 992px) {
     .banner {
@@ -8709,7 +8710,12 @@ ul {
     .third_slider_wrapper .slider_item .slider_item_title,
     .fourth_slider_wrapper .slider_item .slider_item_title,
     .fifth_slider_wrapper .slider_item .slider_item_title {
+      text-transform: uppercase;
       margin: 20px 0; }
+    .third_slider_wrapper .slider_item .slider_item_price,
+    .fourth_slider_wrapper .slider_item .slider_item_price,
+    .fifth_slider_wrapper .slider_item .slider_item_price {
+      font-size: 20px; }
 
 .fifth_slider {
   margin-bottom: 40px; }
