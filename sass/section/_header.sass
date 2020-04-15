@@ -43,7 +43,7 @@ header
 		margin-left: 10px
 		@media(min-width:768px)
 			max-width: 30px
-	&:hover
+	&:hover span
 		color: $gray
 .header-item-text
 	display: inline-block
@@ -52,6 +52,8 @@ header
 	right: -10px
 	top: 7px
 	font-size: 17px
+	&:hover
+		color: #fff
 	@media(min-width:768px)
 		right: 11px
 		top: 3px
@@ -62,6 +64,8 @@ header
 	right: -10px
 	top: 7px
 	font-size: 17px
+	&:hover
+		color: #fff
 	@media(min-width:768px)
 		right: auto
 		left: 10px
@@ -125,7 +129,7 @@ header
 .navigation-mob
 	// position: relative
 	width: 270px
-	background-color: #20374a
+	background-color: rgba(32, 55, 74, .9)
 	color: $gray
 	font-size: 19px
 	font-weight: 400
@@ -133,6 +137,9 @@ header
 	border-radius: 0
 	padding: 20px 10px 10px
 	left: -31px!important
+	margin-top: 32px
+	@media(min-width:768px)
+		margin-top: 15px
 	.menu-item
 		padding: 10px 5px
 	hr 
@@ -189,12 +196,16 @@ nav
 	font-weight: 300
 	overflow: auto
 	min-width: 130px
-	// margin-top: 20px
+	margin-top: 32px
+	@media(min-width:768px)
+		margin-top: 15px
 	li 
 		margin-bottom: 5px
 	li:hover 
 		color: $gray
 		cursor: pointer
+	.btn_gray
+		color: #fff
 .delivery-dropdown
 	max-height: 220px
 	// min-width: 130px
@@ -208,7 +219,6 @@ nav
 	// left: -40px!important
 	right: 0!important
 	left: auto
-	
 	img 
 		width: auto
 		height: 25px
@@ -220,5 +230,13 @@ nav
 			padding: 10px
 			&:hover
 				color: $gray
-	
-
+#header_scroll::-webkit-scrollbar
+	width: 5px
+#header_scroll::-webkit-scrollbar-thumb
+	background: #fff
+	border-radius: 10px
+#header_scroll::-webkit-scrollbar-track
+	opacity: 1
+	border: 1px solid $gray
+#header_scroll::-webkit-scrollbar-thumb:hover
+	background: #777
