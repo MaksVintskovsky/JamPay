@@ -160,24 +160,7 @@ $(document).ready(function(){
   // });
 
   
-  // $(".delivery-dropdown").niceScroll({
-  //   cursorwidth:"2px",
-  //   cursorborder: "2px solid #fff",
-  //   autohidemode: false,
-  //   cursorborderradius: "1px",
-  //   railpadding: 
-  //   {
-  //     top: 20, 
-  //     right: 4,
-  //     left: 0,
-  //     bottom: 20
-  //   }
-  // });
-        
-  
 
-    
-  
     // :::::::::::: Filter :::::::::::::
     // :::::::::::: Catalog :::::::::::::
     
