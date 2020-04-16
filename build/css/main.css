@@ -4560,7 +4560,7 @@ a.close.disabled {
   top: 0;
   left: 0;
   z-index: 1040;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #000; }
   .modal-backdrop.fade {
@@ -8131,11 +8131,7 @@ nav {
   border-radius: 0;
   border: none;
   font-size: 17px;
-  font-weight: 300;
-  -webkit-transform: translateX(0%) !important;
-  transform: translateX(0%) !important;
-  right: auto !important;
-  top: auto !important; }
+  font-weight: 300; }
 
 .brand_block {
   height: 400px;
