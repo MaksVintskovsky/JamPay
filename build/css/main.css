@@ -8677,7 +8677,7 @@ ul {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 360px;
+  width: 400px;
   border: 1px solid #8a999c;
   padding: 10px 15px 20px;
   background-color: #fff;
@@ -8689,11 +8689,11 @@ ul {
   .modal_change input {
     width: 60px;
     height: 30px;
-    margin: 0 5px;
+    margin: 0 10px;
     font-weight: 400;
     color: #8a999c; }
   .modal_change .btn_group {
-    margin-top: 15px;
+    margin-top: 25px;
     -webkit-box-pack: justify;
     justify-content: space-between; }
   .modal_change button {
@@ -8710,7 +8710,7 @@ ul {
     width: 25px;
     height: 27px;
     padding: 5px;
-    margin-left: 5px;
+    margin-left: 10px;
     cursor: pointer; }
 
 .basket-item_count-dell,
@@ -8805,6 +8805,10 @@ ul {
 .fifth_slider_wrapper {
   padding: 40px 20px 0;
   margin: 0px auto; }
+  .third_slider_wrapper a:hover,
+  .fourth_slider_wrapper a:hover,
+  .fifth_slider_wrapper a:hover {
+    color: #8a999c; }
   .third_slider_wrapper h2,
   .fourth_slider_wrapper h2,
   .fifth_slider_wrapper h2 {
