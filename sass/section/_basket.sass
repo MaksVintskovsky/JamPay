@@ -70,46 +70,52 @@
         width: 158px
     @media(min-width:992px)
         padding: 0
-.modal-change
-    display: none
-    position: absolute
+.modal_change
     left: 50%
     top: 50%
+    transform: translate(-50%, -50%)
     width: 360px
     border: 1px solid $gray
     padding: 10px 15px 20px
     background-color: #fff
-    font-size: 13px
-    z-index: 2
+    font-size: 15px
+    height: auto
     .product-title
-        font-size: 13px
+        font-size: 15px
         margin: 0
     input 
         width: 60px
+        height: 30px
         margin: 0 5px
         font-weight: 400
-    .btn-group
+        color: $gray
+    .btn_group
         margin-top: 15px
+        justify-content: space-between
     button
         margin: 0
+
         &:first-child
             margin-right: 10px
+    .modal_change_dialog
+        margin: 0
+        pointer-events: visible
 .basket-item_count
     margin-left: 10px
     img 
         width: 25px
         height: 27px
         padding: 5px
-        // margin-left: 10px
+        margin-left: 5px
         cursor: pointer
 .basket-item_count-dell,
 .basket-item_count-add
-    font-size: 30px
+    font-size: 34px
     line-height: 0.6
     display: inline-block
     border: 1px solid $gray
-    width: 25px
-    height: 25px
+    width: 30px
+    height: 30px
     cursor: pointer
 .basket-item_count-add
     line-height: 0.8

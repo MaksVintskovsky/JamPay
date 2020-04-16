@@ -7848,7 +7848,6 @@ textarea:-ms-input-placeholder {
 .d-b {
   display: block !important; }
 
-/* width */
 header {
   position: relative;
   background-color: #2f4050;
@@ -8673,30 +8672,37 @@ ul {
     .basket-buttons {
       padding: 0; } }
 
-.modal-change {
-  display: none;
-  position: absolute;
+.modal_change {
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 360px;
   border: 1px solid #8a999c;
   padding: 10px 15px 20px;
   background-color: #fff;
-  font-size: 13px;
-  z-index: 2; }
-  .modal-change .product-title {
-    font-size: 13px;
+  font-size: 15px;
+  height: auto; }
+  .modal_change .product-title {
+    font-size: 15px;
     margin: 0; }
-  .modal-change input {
+  .modal_change input {
     width: 60px;
+    height: 30px;
     margin: 0 5px;
-    font-weight: 400; }
-  .modal-change .btn-group {
-    margin-top: 15px; }
-  .modal-change button {
+    font-weight: 400;
+    color: #8a999c; }
+  .modal_change .btn_group {
+    margin-top: 15px;
+    -webkit-box-pack: justify;
+    justify-content: space-between; }
+  .modal_change button {
     margin: 0; }
-    .modal-change button:first-child {
+    .modal_change button:first-child {
       margin-right: 10px; }
+  .modal_change .modal_change_dialog {
+    margin: 0;
+    pointer-events: visible; }
 
 .basket-item_count {
   margin-left: 10px; }
@@ -8704,16 +8710,17 @@ ul {
     width: 25px;
     height: 27px;
     padding: 5px;
+    margin-left: 5px;
     cursor: pointer; }
 
 .basket-item_count-dell,
 .basket-item_count-add {
-  font-size: 30px;
+  font-size: 34px;
   line-height: 0.6;
   display: inline-block;
   border: 1px solid #8a999c;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   cursor: pointer; }
 
 .basket-item_count-add {

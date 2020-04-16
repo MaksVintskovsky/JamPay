@@ -53,7 +53,7 @@
               </div>
               <div class="column_2">
                 <span>200</span>
-                <button class="my_button btn_green" onclick="open_modal();">CHANGE</button>
+                <button class="my_button btn_green" data-toggle="modal" data-target="#modalChange" >CHANGE</button>
               </div>
               <div class="column_3">
                 <div class="">20 003 400,00</div>
@@ -71,7 +71,7 @@
               </div>
               <div class="column_2">
                 <span>200</span>
-                <button class="my_button btn_green" onclick="open_modal();">CHANGE</button>
+                <button class="my_button btn_green" data-toggle="modal" data-target="#modalChange">CHANGE</button>
               </div>
               <div class="column_3">
                 <div class="">20 003 400,00</div>
@@ -89,7 +89,7 @@
               </div>
               <div class="column_2">
                 <span>200</span>
-                <button class="my_button btn_green" onclick="open_modal();">CHANGE</button>
+                <button class="my_button btn_green" data-toggle="modal" data-target="#modalChange">CHANGE</button>
               </div>
               <div class="column_3">
                 <div class="">20 003 400,00</div>
@@ -129,22 +129,24 @@
         </div>
       </div>
     </div>
-    <form class="modal-change" id="my_fucking_modal">
-      <div class="text-center">CHANGE QUANTITY OF PRODUCC</div>
-      <div class="flex justify-content-around align-items-center mt-2">
-        <div class="product-title text-left">SAMSUNG ADG 10</div>
-        <div class="basket-item_count flex text-center">
-          <span class="basket-item_count-dell">-</span>
-          <input type="text" class="basket-item_count-value text-center" value="15">
-          <span class="basket-item_count-add">+</span>
-          <img src="img/basket/trash.png" alt="trash">
+    <div class="modal_change modal fade " tabindex="-1" id="modalChange" >
+      <div class="modal-dialog modal_change_dialog" role="document">
+        <div class="text-center">CHANGE QUANTITY OF PRODUCC</div>
+        <div class="flex justify-content-around align-items-center mt-2">
+          <div class="product-title text-left">SAMSUNG ADG 10</div>
+          <div class="basket-item_count flex text-center">
+            <span class="basket-item_count-dell">-</span>
+            <input type="text" class="basket-item_count-value text-center" value="15">
+            <span class="basket-item_count-add">+</span>
+            <img src="img/basket/trash.png" alt="trash">
+          </div>
+        </div>
+        <div class="btn_group flex mt-2">
+          <button  type="button" class="my_button btn_gray" data-dismiss="modal" onclick="close_modal_change();">ОТМЕНИТЬ</button>
+          <button  type="button" class="my_button btn_green">CОХРАНИТЬ</button>
         </div>
       </div>
-      <div class="btn_group flex mt-2">
-        <button  type="button" class="my_button btn_gray"  onclick="close_modal_change();">ОТМЕНИТЬ</button>
-        <button  type="button" class="my_button btn_green">CОХРАНИТЬ</button>
-      </div>
-    </form>
+    </div>
 
    
     <!--::::::::::::: // Basket::::::::::::: !-->
