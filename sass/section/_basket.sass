@@ -71,15 +71,15 @@
     @media(min-width:992px)
         padding: 0
 .modal_change
-    left: 50%
-    top: 50%
-    transform: translate(-50%, -50%)
-    width: 400px
-    border: 1px solid $gray
-    padding: 10px 15px 20px
-    background-color: #fff
-    font-size: 15px
-    height: auto
+    // left: 50%
+    // top: 50%
+    // transform: translate(-50%, -50%)
+    // width: 400px
+    // border: 1px solid $gray
+    // padding: 10px 15px 20px
+    // background-color: #fff
+    // font-size: 15px
+    // height: auto
     .product-title
         font-size: 15px
         margin: 0
@@ -97,9 +97,18 @@
 
         &:first-child
             margin-right: 10px
-    .modal_change_dialog
+    .modal_dialog_change
         margin: 0
-        pointer-events: visible
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)!important
+        width: 400px
+        border: 1px solid $gray
+        padding: 10px 15px 20px
+        background-color: #fff
+        font-size: 15px
+        height: auto
+
 .basket-item_count
     margin-left: 10px
     img 

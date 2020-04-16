@@ -56,15 +56,15 @@
     // min-width: 620px
     max-width: 1220px
     width: 94%
-    // height: 485px
-    margin: 0 3%
+    height: auto
+    margin: 100px 3%
     background-color: rgba(32, 55, 74, .9)
     color: #fff
     padding: 30px 7px 0 7px
     border-radius: 0
     border: none
     font-size: 17px
-    font-weight: 300
+    font-weight: 400
     // transform: translateX(0%)!important
     // left: auto!important
     // right: auto!important
@@ -79,7 +79,7 @@
     //     width: 1200px
 .brand_block
     // min-width: 700px
-    height: 400px
+    max-height: 400px
     overflow-y: scroll
     flex-wrap: wrap
 
@@ -102,11 +102,13 @@
         align-items: center
     .my_input
         background-color: inherit
-        width: 260px
+        width: 100%
+        @media(min-width:992px)
+            width: 260px
 .brand_nav
     width: 90%
-    // margin-right: 30px
-    margin: 0 auto
+    max-width: 800px
+    margin: 20px auto
     justify-content: space-between
     @media(min-width:1100px)
         margin: 0
@@ -117,7 +119,25 @@
         @media(min-width:1100px)
             padding: 0 8px
 .brand_item
-    max-width: 125px
+    max-width: 90px
     margin: 0 7px 7px 0
     img 
         width: 100%
+    @media(min-width:992px)
+        max-width: 125px
+.brand_search
+    width: 90%
+    position: relative
+    margin: 0 auto
+    @media(min-width:992px)
+        width: 260px
+    button
+        // display: none
+        position: absolute
+        top: 0
+        right: 2px
+        width: 42px
+        height: 26px
+        margin: 0
+        font-weight: 300
+        background: inherit
