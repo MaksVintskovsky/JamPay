@@ -7686,22 +7686,12 @@ html {
   min-width: 640px;
   width: 100%; }
 
-body {
-  width: 100%;
-  min-width: 640px;
-  margin: 0 auto;
-  font-family: "Oswald", sans-serif !important;
+.base_style {
+  font-family: 'Oswald', sans-serif;
   font-size: 17px;
   font-weight: 400;
-  line-height: 1.2 !important;
-  color: #8A999C !important; }
-  body a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer; }
-    body a:hover {
-      text-decoration: none;
-      color: inherit; }
+  line-height: 1.2;
+  color: #8A999C; }
 
 .breadcrumbs {
   text-align: left;
@@ -7739,7 +7729,8 @@ body {
   color: #8A999C;
   background-color: #E7EAEB; }
   .btn_gray:focus, .btn_gray:active, .btn_gray:hover {
-    background-color: #cbd2d4; }
+    background-color: #cbd2d4;
+    color: inherit; }
 
 .btn_white {
   color: #42b9c0;
@@ -7770,9 +7761,6 @@ h2 {
   color: #8A999C;
   font-size: 22px;
   font-weight: 400; }
-  @media (min-width: 992px) {
-    h2 {
-      font-size: 22px; } }
 
 p {
   color: #8A999C;
@@ -7864,6 +7852,13 @@ header {
   @media (min-width: 992px) {
     header {
       padding: 10px 20px 10px 0; } }
+  header a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer; }
+    header a:hover {
+      text-decoration: none;
+      color: inherit; }
 
 .header-logo {
   width: 125px; }
@@ -8305,6 +8300,13 @@ body .card {
     @media (min-width: 992px) {
       body .card .product-title {
         font-size: 17px; } }
+  body .card a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer; }
+    body .card a:hover {
+      text-decoration: none;
+      color: inherit; }
 
 .product-price {
   margin: 15px 0;
@@ -8531,6 +8533,11 @@ body .card {
   margin-bottom: 50px;
   font-size: 13px;
   margin-top: 20px; }
+  .basket a {
+    text-decoration: none;
+    cursor: pointer; }
+    .basket a:hover {
+      text-decoration: none; }
 
 .basket-bill {
   width: 100%;
@@ -8670,6 +8677,14 @@ body .card {
 
 .basket-item_count-add {
   line-height: 0.8; }
+
+.sliders a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; }
+  .sliders a:hover {
+    text-decoration: none;
+    color: inherit; }
 
 .first_slider_wrapper {
   position: relative;
