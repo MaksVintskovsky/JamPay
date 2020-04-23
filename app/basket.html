@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, shrink-to-fit=no">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="build/css/main.css">
+
     <!-- Sliders -->
     <link rel="stylesheet" type="text/css" href="libs//bxSlider/jquery.bxslider.css"/>
     <link rel="stylesheet" href="libs/OwlCarousel/owl.carousel.css">
@@ -13,8 +15,7 @@
 
     <!-- Bootstrap, CSS -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="build/css/main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
     <link rel="shortcut icon" href="img/header/logo.png"  type="image/x-icon" />
 
@@ -30,7 +31,7 @@
     @@include('header.html')
 
     <!--:::::::::::::  Basket::::::::::::: !-->
-    <div class="container text-center">
+    <div class="container-fluid text-center">
       <div class="breadcrumbs">Homepage -&gt; Корзина</div>
       <div class="row">
         <div class="basket col-12 col-xl-6 ">
@@ -99,7 +100,7 @@
           <div class="flex justify-content-between">
             <div class="basket-delivery text-left">
               <span>ВВЕДИТЕ НОМЕР КУПОНА (если таковой имеется)</span>
-              <button class="btn_gradient my_button">ИСПОЛЬЗОВАТЬ КУПОН</button>
+              <button class="btn_white my_button">ИСПОЛЬЗОВАТЬ КУПОН</button>
               <span>МЕТОД ОПЛАТЫ И АДРЕС ДОСТАВКИ</span>
               <div class="mt-2 small-text">Оплата: кредитная карта.</div>
               <div class=" small-text">Доставка: Новая Почта, КК</div>
@@ -119,9 +120,9 @@
             </div>
           </div>
           <div class="basket-buttons flex"> 
-            <button class="btn_gradient my_button">ИЗМЕНИТЬ</button>
-            <button class="btn_gray my_button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-            <button class="my_button btn_green">ОФОРМИТЬ ЗАКАЗ</button>
+            <a href="#" class="btn_gray my_button">ИЗМЕНИТЬ</a>
+            <a href="#" class="btn_white my_button">ПРОДОЛЖИТЬ ПОКУПКИ</a>
+            <a href="#" class="my_button btn_green">ОФОРМИТЬ ЗАКАЗ</a>
           </div>
         </div>
         <div class="basket col-12 col-xl-6">

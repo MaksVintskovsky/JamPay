@@ -1,28 +1,23 @@
-
+$gray: #8A999C
 html
 	min-width: 640px
 	width: 100%
 body
 	width: 100%
 	min-width: 640px
-	// max-width: 1440px
 	margin: 0 auto
-	font-family: 'Oswald', sans-serif
+	font-family: 'Oswald', sans-serif!important
 	font-size: 17px
 	font-weight: 400
-	line-height: 1.2
-	// text-align: center
-	color: $gray
-	// position: relative
-a
-	text-decoration: none
-	color: inherit
-	cursor: pointer
-	// transition: 0.2s ease-out
-	&:hover
-		cursor: pointer
+	line-height: 1.2!important
+	color: $gray!important
+	a
 		text-decoration: none
-		color: #fff
+		color: inherit
+		cursor: pointer
+		&:hover
+			text-decoration: none
+			color: inherit
 .breadcrumbs
 	text-align: left
 	font-size: 13px
@@ -37,9 +32,10 @@ a
 	text-transforn: uppercase
 	font-size: 13px
 	font-weight: 400
+	line-height: 2
 	margin: 10px auto
 	outline: none!important
-	// cursor: pointer
+	cursor: pointer
 	@media(min-width:768px)
 		width: 138px
 	@media(min-width:868px)
@@ -49,10 +45,18 @@ a
 	color: #ffffff
 	&:focus, &:active, &:hover
 		background-color: darken(#42b9c0, 10%)
+		color: #ffffff
 .btn_gray
-	background-color: $gray
+	color: #8A999C
+	background-color: #E7EAEB
 	&:focus, &:active, &:hover
-		background-color: darken(#87979b, 10%)
+		background-color: darken(#E7EAEB, 10%)
+.btn_white
+	color: #42b9c0
+	border: 1px solid #42b9c0
+	background-color: #fff
+	&:focus, &:active, &:hover
+		color: darken(#42b9c0, 10%)
 .btn_gradient
 	background-image: linear-gradient(150deg, #ffffff 0%,  #e6e6e6 100%)
 	height: 28px
@@ -71,34 +75,14 @@ h2
 	color: $gray
 	font-size: 22px
 	font-weight: 400
-	// text-align: left
 	@media(min-width:992px)
 		font-size: 22px
-h3 
-	// color: #333333
-	// font-size: 24px
-	// font-weight: 700
-	// text-align: left
-	// @media(min-width:992px)
-	// 	font-size: 20px
 p 
 	color: $gray
 	font-size: 17px
 	font-weight: 400
 	line-height: 1.3
 	text-align: left
-input
-	// height: 26px
-input, textarea
-	
-	// padding: 0 0 0 7px
-	// font-size: 13px
-	// font-weight: 300
-	// border: 1px solid $gray
-	// border-radius: 0
-	// color: $gray
-	&:focus
-		box-shadow: none!important
 .my_input, .my_textarea
 	padding: 0 0 0 7px!important
 	font-size: 13px!important
@@ -112,46 +96,25 @@ input, textarea
 .my_input
 	height: 26px
 input::-webkit-input-placeholder 
-	// color: #666666
 	font-size: 12px
-	// font-weight: 600
-
 input::-moz-placeholder /* Firefox 18- */
-	// color: #666666
 	font-size: 12px
-	// font-weight: 600
-
 input::-moz-placeholder /* Firefox 19+ */
-	// color: #666666
 	font-size: 12px
-	// font-weight: 600
-
 input::-ms-input-placeholder 
-	// color: #666666
 	font-size: 12px
-	// font-weight: 600
-
 textarea::-webkit-input-placeholder 
 	padding-top: 5px
-	// color: #666666
 	font-size: 12px
-	// font-weight: 600
 textarea:-moz-placeholder  /* Firefox 18- */
 	padding-top: 5px
-	// color: #666666 
 	font-size: 12px
-	// font-weight: 600
 textarea::-moz-placeholder   /* Firefox 19+ */
 	padding-top: 5px
-	// color: #666666 
 	font-size: 12px
-	// font-weight: 600
 textarea:-ms-input-placeholder   
 	padding-top: 5px
-	// color: #666666
 	font-size: 12px
-	// font-weight: 600
-
 
 .d-n-mob-span
 	display: none
@@ -172,8 +135,6 @@ textarea:-ms-input-placeholder
 .big-text
 	font-size: 17px
 	font-weight: 400
-// .m-auto	
-// 	margin: 0 auto
 .d-b
 	display: block!important
 

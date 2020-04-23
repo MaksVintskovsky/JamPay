@@ -2,68 +2,67 @@
     font-size: 13px
     font-weight: 300
     margin: 0 10px 10px
-.card
-    text-align: left
-    padding: 10px 0px
-    border: none
-    @media(min-width:868px)
+body 
+    .card
+        text-align: left
         padding: 10px 0px
-.card-wrapper
-    flex-direction: column
-    
-    @media(min-width:768px)
-        flex-direction: row
-.card-slider-top-wrapper
-    max-width: 800px
-    // border: 1px solid $gray
-    margin: 0 10px 0 10px
-    @media(min-width:768px)
-        margin: 0 10px 0 10px
-.card-slaider
-    width: 90%
-    margin: 0 auto
-    mmargin: 0 0px 0 10px
-    @media(min-width:768px)
-        width: 60%
-        margin: 0 10px 0 0px
-    @media(min-width:1050px)
-        margin: 0 20px 0 0px
-        width: 65%
-.card-slide
-    // border: 1px solid $gray
-    img 
-        width: 100%
-        transition: 0.3s
-        &:hover
-            transform: scale(1.5)
-.card-slider-bottom
-    width: 100%
-    margin: 10px 20px 0 0
-    img 
-        width: 100%
-        border: 1px solid $gray
-    a
-        margin-right: 5px
-        &:last-child
-            margin-right: 0
-.card-info
-    width: 92%
-    margin: 0 auto
-    @media(min-width:768px)
-        max-width: 340px
-        width: 100%
-.card-info>.flex
-    justify-content: space-between
-.product-title
-    margin-top: 20px
-    text-transform: uppercase
-    @media(min-width:768px)
-        font-size: 15px
-        margin-top: 0px
-        margin-bottom: 15px
-    @media(min-width:992px)
-        font-size: 17px
-.product-num
+        border: none
+        @media(min-width:868px)
+            padding: 10px 0px
+        .card-wrapper
+            flex-direction: column
+            @media(min-width:768px)
+                flex-direction: row
+        .card-slider-top-wrapper
+            max-width: 800px
+            // border: 1px solid $gray
+            margin: 0 10px 0 10px
+            @media(min-width:768px)
+                margin: 0 10px 0 10px
+        .card-slaider
+            width: 90%
+            margin: 0 auto
+            mmargin: 0 0px 0 10px
+            @media(min-width:768px)
+                width: 60%
+                margin: 0 10px 0 0px
+            @media(min-width:1050px)
+                margin: 0 20px 0 0px
+                width: 65%
+        .card-slide
+            // border: 1px solid $gray
+            img 
+                width: 100%
+                transition: 0.3s
+                &:hover
+                    transform: scale(1.5)
+        .card-slider-bottom
+            width: 100%
+            margin: 10px 20px 0 0
+            img 
+                width: 100%
+                border: 1px solid $gray
+            a
+                margin-right: 5px
+                &:last-child
+                    margin-right: 0
+        .card-info
+            width: 92%
+            margin: 0 auto
+            @media(min-width:768px)
+                max-width: 340px
+                width: 100%
+        .card-info>.flex
+            justify-content: space-between
+        .product-title
+            margin-top: 20px
+            text-transform: uppercase
+            @media(min-width:768px)
+                font-size: 15px
+                margin-top: 0px
+                margin-bottom: 15px
+            @media(min-width:992px)
+                font-size: 17px
 .product-price
     margin: 15px 0
     font-size: 20px
@@ -89,7 +88,6 @@
         height: 26px
         border: 1px solid $gray
         position: relative
-        // display: inline-block
         &::before
             position: absolute
             content: ""
@@ -217,6 +215,24 @@
             height: 50px
     .chat
         margin-top: 20px
+    input.check
+        display: none
+    input.check + label:before
+        content: "\2713"
+        color: transparent
+        display: inline-block
+        border: 1px solid $gray
+        font-size: 20px
+        line-height: 7px
+        margin: -5px 5px 0 0
+        height: 16px
+        width: 16px
+        text-align: center
+        vertical-align: middle
+        transition: color ease .3s
+        cursor: pointer
+    input.check:checked + label:before
+        color: #000
     @media(min-width:768px)
         width: 70%
     @media(min-width:992px)
@@ -231,101 +247,4 @@
 .comment-header
     justify-content: space-between
     margin-bottom: 10px
-input.check
-    display: none
-
-input.check + label:before
-    content: "\2713"
-    color: transparent
-    display: inline-block
-    border: 1px solid $gray
-    font-size: 20px
-    line-height: 7px
-    margin: -5px 5px 0 0
-    height: 16px
-    width: 16px
-    text-align: center
-    vertical-align: middle
-    transition: color ease .3s
-    cursor: pointer
-
-input.check:checked + label:before
-    color: #000
-
-
-ul 
-    padding: 0
-    margin: 0
-    list-style-type: none
-
-.select 
-    display: inline-block
-    vertical-align: top 
-    max-width: 245px
-    width: 100%
-    position: relative
-
-
-.select-wrap 
-	max-width: 700px
-	width: 100%
-	margin: 20px auto
-
-
-.select-wrap select 
-	margin: 20px
-
-
-.select__gap
-    // background: transparent
-    color: $gray
-    border: 1px solid $gray
-    text-transform: uppercase
-    height: 26px
-    width: 65px
-    cursor: pointer
-    position: relative
-    padding: 5px 10px
-.on.select__gap, .select__gap:hover
-    color: $gray
-.select__list 
-    position: absolute
-    background: #fff
-    border: 1px solid $gray
-    margin: 0px 0
-    width: 100%
-.select__list.on 
-	display: block
-.select__item span
-    display: block
-    padding: 5px 10px
-    cursor: pointer
-.select__item.selected,
-.select__item span:hover
-    color: #fff
-    background-color: $gray
-.select__gap::after 
-	content: ''
-	display: block
-	width: 4px
-	height: 6px
-	position: absolute
-	right: 5px
-	top: 50%
-	margin-top: -3px
-	border-left: 3px solid transparent
-	border-right: 3px solid transparent
-	border-top: 6px solid $gray
-	-webkit-transition: all .27s ease-in-out
-	     -o-transition: all .27s ease-in-out
-	        transition: all .27s ease-in-out
-	-webkit-transform: rotate(0deg)
-	    -ms-transform: rotate(0deg)
-	     -o-transform: rotate(0deg)
-	        transform: rotate(0deg)
-.on.select__gap:after 
-	-webkit-transform: rotate(180deg)
-	    -ms-transform: rotate(180deg)
-	     -o-transform: rotate(180deg)
-	        transform: rotate(180deg)
 
