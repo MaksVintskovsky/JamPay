@@ -39,13 +39,20 @@ body
         .card-slider-bottom
             width: 100%
             margin: 10px 20px 0 0
+            overflow: hidden
             img 
                 width: 100%
+                min-width: 70px
                 border: 1px solid $gray
             a
                 margin-right: 5px
+                min-width: 70px
                 &:last-child
                     margin-right: 0
+            a.active 
+                img 
+                    border: 1px solid #42b9c0
+
         .card-info
             width: 92%
             margin: 0 auto
@@ -57,6 +64,7 @@ body
         .product-title
             margin-top: 20px
             text-transform: uppercase
+            max-width: 380px
             @media(min-width:768px)
                 font-size: 15px
                 margin-top: 0px
@@ -148,20 +156,24 @@ body
     justify-content:  center
     margin: 10px 0 10px
     text-align: center
+    border-bottom: 1px solid #E7EAEB
+    border-top: 1px solid #E7EAEB
     @media(min-width:768px)
         margin: 40px 0 10px
     a:hover
         color: inherit
 .card-tab
     width: 145px
-    border: 1px solid $gray
+    // border: 1px solid $gray
     text-align: center
     margin-right: 10px
     font-size: 15px
     text-transform: uppercase
     padding: 6px
-    background-image: linear-gradient(150deg, #ffffff 0%, #e6e6e6 99.99990000000001%, #e6e6e6 100%)
+    // background-image: linear-gradient(150deg, #ffffff 0%, #e6e6e6 99.99990000000001%, #e6e6e6 100%)
     cursor: pointer
+    &:hover
+        background-color: #E7EAEB
 .tab-content
     font-size: 13px
     font-weight: 300
@@ -172,9 +184,9 @@ body
 
 .card-tab.active
     background-image: none
-    background-color: $gray
+    background-color: #E7EAEB
     span
-        color: #fff
+        // color: #fff
 .comments
     font-size: 17px
     flex-direction: column
@@ -218,6 +230,7 @@ body
             margin: 0
         input, textarea
             width: 100%
+            margin-bottom: 5px
         textarea
             height: 50px
     .chat
