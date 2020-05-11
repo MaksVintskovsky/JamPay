@@ -187,3 +187,15 @@ function open_modal(event){
   // event.preventDefault();
   $('.modal-change').show(200);
 };
+
+/*::::::::::::: Main Nav Active links:::::::::::::*/                      
+$('.myAccNav a').each(function () {             // получаем все нужные нам ссылки
+  var location = window.location.href; // получаем адрес страницы
+  var link = this.href;                // получаем адрес ссылки
+  if(location == link) {               // при совпадении адреса ссылки и адреса окна
+      $('.myAccNav a').removeClass('active')
+      $(this).addClass('active');  //добавляем класс
+  // } else if($('.nav a').hasClass('active')){
+      
+  }
+});

@@ -206,178 +206,124 @@
     </header>
     <!--::::::::::::: // Header::::::::::::: !-->
 
-    <!--::::::::::::: Carousel::::::::::::: !-->
-    <div class="sliders base_style">
-      <div class="first_slider_wrapper">
-        <div class="first_slider owl-carousel">
-          <div><a href="#"><img src="img/slider_1/1.jpg" alt="img"></a></div>
-          <div><a href="#"><img src="img/slider_1/2.jpg" alt="img"></a></div>
-          <div><a href="#"><img src="img/slider_1/3.jpg" alt="img"></a></div>
-          <div><a href="#"><img src="img/slider_1/4.jpg" alt="img"></a></div>
+    <!--::::::::::::: Dashboard::::::::::::: !-->
+    <div class="container-fluid">
+      <div class="dashboard base_style">
+        <div class="breadcrumbs d-n-mob">Homepage -> Мой аккаунт -> Dashboard</div>
+        <div class="myAccNav flex base_style">
+          <a href="dashboard.html" class="nav_item">
+            <img class="nav_item_img" src="img/icons/dashboard.png" alt="img">
+            <div class="nav_item_name">DASHBOARD</div>
+          </a>
+          <a href="myProfile.html" class="nav_item active">
+            <img class="nav_item_img" src="img/icons/myprof.png" alt="img">
+            <div class="nav_item_name">МОЙ ПРОФИЛЬ</div>
+          </a>
+          <a href="chatroom.html" class="nav_item">
+            <img class="nav_item_img" src="img/icons/chatroom.png" alt="img">
+            <div class="nav_item_name">CHATROOM</div>
+            <div class="nav_item_num">5</div>
+          </a>
+          <a href="purchases.html" class="nav_item">
+            <img class="nav_item_img" src="img/icons/purchases.png" alt="img">
+            <div class="nav_item_name">ПОКУПКИ</div>
+            <div class="nav_item_num">3</div>
+          </a>
+          <a href="favorite.html" class="nav_item">
+            <img class="nav_item_img" src="img/icons/like.png" alt="img">
+            <div class="nav_item_name">ИЗБРАННЫЕ</div>
+            <div class="nav_item_num">1</div>
+          </a>
         </div>
-        <div class="banner">
-          <div class="banner_title">ПОКУПАЙ <br> В МАРКЕТПЛЕЙС <br>JAM PAY</div>
-          <div class="banner_center">​Jam Pay - лучшее со всего мира</div>
-          <button class="my_button btn_green">СМОТРЕТЬ КАТАЛОГ</button>
-        </div>
-      </div>
-      <div class="container-fluid p-0">
-        <div class="second_slider_wrapper">
-          <div class="second_slider_right owl-carousel">
-            <div><a href="#"><img src="img/slider_2/prom_001.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_002.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_003.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_004.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_005.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_006.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_007.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_008.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_009.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_010.jpg" alt="img"></a></div>
-          </div>
-          <!-- <div class="second_slider_nav">
-            <div id="secondSliderNext"><img src="img/buttons/next.png" alt="arr"></div>
-            <div id="secondSliderPrev"><img src="img/buttons/prev.png" alt="arr"></div>
-          </div> -->
-        </div>
-        <div class="second_slider_wrapper">
-          <div class="second_slider_left owl-carousel">
-            <div><a href="#"><img src="img/slider_2/prom_001.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_002.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_003.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_004.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_005.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_006.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_007.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_008.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_009.jpg" alt="img"></a></div>
-            <div><a href="#"><img src="img/slider_2/prom_010.jpg" alt="img"></a></div>
-          </div>
-        </div>
-        <div class="third_slider_wrapper text-center">
-          <h2 >Рекомендованно для вас</h2>
-          <div class="third_slider owl-carousel">
-            <a href="#">
-              <div class="slider_item">
-                <img src="img/slider_3/item1.webp" alt="img">
-                <div class="slider_item_title">Куртка-хуюртка</div>
-                <div class="slider_item_price">148,75</div>
+        <div class="breadcrumbs d-n-desc mb-3">Homepage -> Мой аккаунт -> Мой профиль</div>
+        <div class="row mb-4">
+          <div class="col-12 col-lg-6">
+            <img class="diagram mb-4" src="img/dashboard/diagram.png" alt="img">
+            <div class="flex justify-content-around">
+              <div class="text-center">
+                <span>СДЕЛКИ:</span><br>
+                <span>50</span><br>
+                <div class="dropdown">
+                  <div class="dropdown-toggle" data-toggle="dropdown">период:год</div>
+                  <ul class=" dropdown-menu">
+                    <li>год</li>
+                    <li>месяц</li>
+                    <li>день</li>
+                  </ul>
+                </div>
               </div>
-            </a>
-            <a href="#">
-              <div class="slider_item">
-                <img src="img/slider_3/item2.webp" alt="img">
-                <div class="slider_item_title">Куртка-хуюртка</div>
-                <div class="slider_item_price">148,75</div>
+              <div class="text-center">
+                <span>РАСХОДЫ:</span><br>
+                <span>20 000 600,00</span><br>
+                <div class="dropdown">
+                  <div class="dropdown-toggle" data-toggle="dropdown">период:год</div>
+                  <ul class=" dropdown-menu">
+                    <li>год</li>
+                    <li>месяц</li>
+                    <li>день</li>
+                  </ul>
+                </div>
               </div>
-            </a>
-            <a href="#">
-              <div class="slider_item">
-                <img src="img/slider_3/item3.webp" alt="img">
-                <div class="slider_item_title">Куртка-хуюртка</div>
-                <div class="slider_item_price">148,75</div>
+              <div class="text-center">
+                <span>ПОСЕЩЕНИЯ:</span><br>
+                <span>30</span><br>
+                <div class="dropdown">
+                  <div class="dropdown-toggle" data-toggle="dropdown">период:год</div>
+                  <ul class=" dropdown-menu">
+                    <li>год</li>
+                    <li>месяц</li>
+                    <li>день</li>
+                  </ul>
+                </div>
               </div>
-            </a>
-            <a href="#">
-              <div class="slider_item">
-                <img src="img/slider_3/item4.webp" alt="img">
-                <div class="slider_item_title">Куртка-хуюртка</div>
-                <div class="slider_item_price">148,75</div>
+            </div>
+            <div class="big-text text-center mt-5 mb-4">СПИСОК ПОСТАВЩИКОВ</div>
+            <div class="providers">
+              <div class="head flex">
+                <span>ПОСТАВЩИК</span>
+                <span>СДЕЛОК</span>
+                <span>ОБЩАЯ СТОИМОСТЬ</span>
+                <span>ТОВАР</span>
+                <span>СТРАНА</span>
               </div>
-            </a>
-          </div>
-        </div>
-        <div class="fourth_slider_wrapper text-center">
-          <h2 >Лучшее в <span class="best_in">инструменты</span></h2>
-          <div class="fourth_slider owl-carousel">
-            <a href="#">
-              <div class="slider_item">
-                <img src="img/slider_3/item1.webp" alt="img">
-                <div class="slider_item_title">Куртка-хуюртка</div>
-                <div class="slider_item_price">148,75</div>
+              <div class="provider">
+                <span>ТОВ Мотор</span>
+                <span>20</span>
+                <span>200 000,00</span>
+                <span>Метизы</span>
+                <span>Украина</span>
               </div>
-            </a>
-            <a href="#">
-              <div class="slider_item">
-                <img src="img/slider_3/item2.webp" alt="img">
-                <div class="slider_item_title">Куртка-хуюртка</div>
-                <div class="slider_item_price">148,75</div>
+              <div class="provider">
+                <span>АО Лампа</span>
+                <span>1500</span>
+                <span>50 000,00</span>
+                <span>Лампы, светильники </span>
+                <span>Вьетнам</span>
               </div>
-            </a>
-            <a href="#">
-              <div class="slider_item">
-                <img src="img/slider_3/item3.webp" alt="img">
-                <div class="slider_item_title">Куртка-хуюртка</div>
-                <div class="slider_item_price">148,75</div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="slider_item">
-                <img src="img/slider_3/item4.webp" alt="img">
-                <div class="slider_item_title">Куртка-хуюртка</div>
-                <div class="slider_item_price">148,75</div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="fifth_slider_wrapper text-center">
-          <h2 >Лучшее в <span class="best_in">Одежда</h2>
-          <div class="fifth_slider owl-carousel">
-            <a href="#">
-              <div class="slider_item">
-                <img src="img/slider_3/item1.webp" alt="img">
-                <div class="slider_item_title">Куртка-хуюртка</div>
-                <div class="slider_item_price">148,75</div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="slider_item">
-                <img src="img/slider_3/item2.webp" alt="img">
-                <div class="slider_item_title">Куртка-хуюртка</div>
-                <div class="slider_item_price">148,75</div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="slider_item">
-                <img src="img/slider_3/item3.webp" alt="img">
-                <div class="slider_item_title">Куртка-хуюртка</div>
-                <div class="slider_item_price">148,75</div>
-              </div>
-            </a>
-            <a href="#">
-              <div class="slider_item">
-                <img src="img/slider_3/item4.webp" alt="img">
-                <div class="slider_item_title">Куртка-хуюртка</div>
-                <div class="slider_item_price">148,75</div>
-              </div>
-            </a>
+            </div>
+            <div><img class="map" src="img/dashboard/map.png" alt=""></div>
             
           </div>
+          <div class="col-12 col-lg-6">
+            <div class="big-text text-center mb-3">СПИСОК ЗАДАЧ</div>
+            <div class="flex justify-content-between">
+              <div class="task_list">
+                <div class="task">
+                  <input type="checkbox" id="task1" class="check" name="check">
+                  <label for="task1">30/01/2019 Запросить скидку на масло</label><br>
+                </div>
+                <div class="task">
+                  <input type="checkbox" id="task2" class="check" name="check">
+                  <label for="task2">15/02/2020 Купить станок</label><br>
+                </div>
+              </div>
+              <button class="my_button btn_green m-0" type="submit">ДОБАВИТЬ ЗАДАЧУ</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!--::::::::::::: // Carousel::::::::::::: !-->
-
-
-    <!--:::::::::::::  About::::::::::::: !-->
-    <div id="about" class="about base_style">
-      <h2 class="title text-center">О НАС</h2>
-      <p>Мы всегда стремимся в будущее. Как мы можем достичь его?.</p>
-      <p>Наш маркетплейс является специализированной торговой площадкой по продаже оборудования, бытовых и промышленных товаров для покупателей всего мира. 
-        Мы поможем разместить Ваш товар на сайте, организовать его онлайн продажи в сети интернет и обеспечить его продвижение на рынке.</p>
-      <p>Ваша компания получит огромную базу потребителей, отслеживание динамики цен и конкурентных предложений. 
-        Вы имеете возможность привлечь миллионы клиентов, провести маркетинговые исследования, выделить из них фокус-группы и расширить целевую аудиторию, которой интересен Ваш продукт. 
-        Вместе мы организуем рекламные компании Вашего товара в социальных сетях, медиа и популярных мессенджерах.</p>
-      <p>Мы гарантируем безопасный прием платежей от частных лиц и компаний. Предлагаем качественную доставку товара с участием логистических и курьерских компаний-партнеров.</p>
-      <p>Покупателю мы предоставляем возможность получения кредитных линий для покупки товара в маркетплейсе от наших банков-партнеров.</p>
-      <p>Для нас очень важно чтобы бренд JamPay имел безукоризненную репутацию и был символом инноваций.</p>
-    </div>
-    <!--::::::::::::: // About::::::::::::: !-->
-    
-    <!--::::::::::::: Slider::::::::::::: !-->
-
-    <!--::::::::::::: //Slider::::::::::::: !-->
-    
+    <!--::::::::::::: // Dashboard::::::::::::: !-->
 
         <!--::::::::::::: Footer::::::::::::: !-->
     <div id="footer" class="base_style">

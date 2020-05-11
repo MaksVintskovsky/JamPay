@@ -1,0 +1,45 @@
+.dashboard
+    font-size: 13px
+    .dropdown-toggle::after
+        display: inline-block
+        cursor: pointer
+
+
+
+.diagram, .map
+    width: 100%
+    max-width: 600px
+    margin: 0 auto
+    display: block
+.providers
+    .head
+        border-bottom: 1px solid $gray
+        padding: 5px 0
+        margin: 5px 0
+    .head, .provider
+        display: flex
+        justify-content: space-between
+        text-align: center
+        span 
+            width: 20%
+.task
+    input.check
+        display: none
+    label
+        cursor: pointer
+    input.check + label::before
+        content: "\2713"
+        color: transparent
+        display: inline-block
+        border: 1px solid $gray
+        font-size: 20px
+        line-height: 7px
+        margin: -5px 5px 0 0
+        height: 16px
+        width: 16px
+        text-align: center
+        vertical-align: middle
+        transition: color ease .3s
+        cursor: pointer
+    input.check:checked + label:before
+        color: #000
