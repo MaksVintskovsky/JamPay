@@ -212,25 +212,29 @@
         <div class="breadcrumbs d-n-mob">Homepage -> Мой аккаунт -> Dashboard</div>
         <div class="myAccNav flex base_style">
           <a href="dashboard.html" class="nav_item">
-            <img class="nav_item_img" src="img/icons/dashboard.png" alt="img">
+            <!-- <img class="nav_item_img_dashboard" src="img/icons/dashboard.png" alt="img"> -->
+            <div class=" nav_item_img_dashboard"></div>
             <div class="nav_item_name">DASHBOARD</div>
           </a>
           <a href="myProfile.html" class="nav_item active">
-            <img class="nav_item_img" src="img/icons/myprof.png" alt="img">
+            <div class=" nav_item_img_myprof"></div>
             <div class="nav_item_name">МОЙ ПРОФИЛЬ</div>
           </a>
           <a href="chatroom.html" class="nav_item">
-            <img class="nav_item_img" src="img/icons/chatroom.png" alt="img">
+            <!-- <img class="nav_item_img nav_item_img_chatroom" src="img/icons/chatroom.png" alt="img"> -->
+            <div class=" nav_item_img_chatroom"></div>
             <div class="nav_item_name">CHATROOM</div>
             <div class="nav_item_num">5</div>
           </a>
           <a href="purchases.html" class="nav_item">
-            <img class="nav_item_img" src="img/icons/purchases.png" alt="img">
+            <!-- <img class="nav_item_img" src="img/icons/purchases.png" alt="img"> -->
+            <div class=" nav_item_img_purchases"></div>
             <div class="nav_item_name">ПОКУПКИ</div>
             <div class="nav_item_num">3</div>
           </a>
           <a href="favorite.html" class="nav_item">
-            <img class="nav_item_img" src="img/icons/like.png" alt="img">
+            <!-- <img class="nav_item_img" src="img/icons/like.png" alt="img"> -->
+            <div class=" nav_item_img_like"></div>
             <div class="nav_item_name">ИЗБРАННЫЕ</div>
             <div class="nav_item_num">1</div>
           </a>
@@ -239,13 +243,13 @@
         <div class="row mb-4">
           <div class="col-12 col-lg-6">
             <img class="diagram mb-4" src="img/dashboard/diagram.png" alt="img">
-            <div class="flex justify-content-around">
+            <div class="flex dashboard_dropdowns">
               <div class="text-center">
                 <span>СДЕЛКИ:</span><br>
                 <span>50</span><br>
                 <div class="dropdown">
-                  <div class="dropdown-toggle" data-toggle="dropdown">период:год</div>
-                  <ul class=" dropdown-menu">
+                  <div class="dropdown-toggle" data-toggle="dropdown">период: <span>год</span></div>
+                  <ul class=" dropdown-menu my_dropdown">
                     <li>год</li>
                     <li>месяц</li>
                     <li>день</li>
@@ -256,8 +260,8 @@
                 <span>РАСХОДЫ:</span><br>
                 <span>20 000 600,00</span><br>
                 <div class="dropdown">
-                  <div class="dropdown-toggle" data-toggle="dropdown">период:год</div>
-                  <ul class=" dropdown-menu">
+                  <div class="dropdown-toggle" data-toggle="dropdown">период: <span>год</span></div>
+                  <ul class=" dropdown-menu my_dropdown">
                     <li>год</li>
                     <li>месяц</li>
                     <li>день</li>
@@ -268,8 +272,8 @@
                 <span>ПОСЕЩЕНИЯ:</span><br>
                 <span>30</span><br>
                 <div class="dropdown">
-                  <div class="dropdown-toggle" data-toggle="dropdown">период:год</div>
-                  <ul class=" dropdown-menu">
+                  <div class="dropdown-toggle" data-toggle="dropdown">период: <span>год</span></div>
+                  <ul class=" dropdown-menu my_dropdown">
                     <li>год</li>
                     <li>месяц</li>
                     <li>день</li>

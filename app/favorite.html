@@ -31,106 +31,46 @@
 
     <!--::::::::::::: MyProfile::::::::::::: !-->
     <div class="container-fluid">
-      <div class="myProfile base_style">
-        <div class="breadcrumbs d-n-mob">Homepage -> Мой аккаунт -> Мой профиль</div>
+      <div class="favorite base_style">
+        <div class="breadcrumbs d-n-mob">Homepage -> Мой аккаунт -> Избранные</div>
         @@include('myAccNav.html')
-        <div class="breadcrumbs d-n-desc mb-3">Homepage -> Мой аккаунт -> Мой профиль</div>
-        <div class="row mb-4">
-          <div class="col-12 col-lg-6">
-            <div class="text-center mb-3">МОИ ДАННЫЕ</div>
-            <form class="" action="">
-              <div class=" form-group text-center my_data_radio mb-1">
-                <input class="" type="radio" id="company" name="type" >
-                <label for="company">КОМПАНИЯ</label>
-                <input class="" type="radio" id="entrepreneur" name="type">
-                <label for="entrepreneur">ПРЕДПРИНИМАТЕЛЬ</label>
-                <input class=" " type="radio" id="individual" name="type">
-                <label for="individual">ФИЗИЧЕСКОЕ ЛИЦО</label>
+        <div class="breadcrumbs d-n-desc mb-3">Homepage -> Мой аккаунт -> Избранные</div>
+        <div class="row">
+          <div class=" col-lg-9 col-xl-7">
+            <div class="basket">
+              <div class="flex basket-header">
+                <span class="column_1">ПРОДУКТ</span>
+                <span class="column_2">КОЛИЧЕСТВО</span>
+                <span class="column_3">ВСЕГО</span>
+                <div class="img_trash"><img src="img/basket/trash.png" alt="trash"></div>
               </div>
-              <div class=" form-group">
-                <label class="w-100">НАЗВАНИЕ
-                  <input class="my_input form-control" type="text" name="name" placeholder="Пример: ООО Мотор или ФОП Петренко Петр Петрович">
-                </label>
-                <div class="flex myProfile_change mb-3">
-                  <div class="text-left">
-                    АДРЕС (для компаний и предпринимателей укажите юридический) <br>
-                    Пример: офис 696, улица Мира,33, Киев, Украина, 01008
+              <div class="basket-items" id="basket_scroll">
+                <div class="basket-item-block flex">
+                  <div class="basket-item flex column_1">
+                    <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
+                    <div class="basket-item-text text-left">
+                      <div class="product-title">DMG MORI DMU 50</div>
+                      <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                      <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                      <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
+                    </div>
                   </div>
-                  <button class="my_button btn_gray m-0">CHANGE</button>
-                </div>
-                <div class="flex half-width">
-                  <label>E-MAIL
-                    <input type="email" name="email" class="my_input form-control" placeholder="E-mail">
-                  </label>
-                  <label>ТЕЛЕФОН (мобильный)
-                    <input type="text" name="phone"  class="my_input form-control" placeholder="+ХХ XXX XXX XXXX">
-                  </label>
-                  <label>КОД ЕГРПОУ (для Компаний) 
-                    <input type="text" name="name"  class="my_input form-control" placeholder="8 цифр">
-                  </label>
-                  <label>РКПН (для ФОП)
-                    <input type="text" name="name"  class="my_input form-control" placeholder="10 цифр">
-                  </label>
-                  <label>РАСЧЕТНЫЙ СЧЕТ В ФОРМАТЕ IBAN
-                    <input type="text" name="name"  class="my_input form-control" placeholder="Пример: UA 89 351005 1234567890123456789">
-                  </label>
-                  <label>ДИРЕКТОР (подписант)
-                    <input type="text" name="name"  class="my_input form-control" placeholder="ФИО">
-                  </label>
-                </div>
-                <div class="flex myProfile_change mb-2">
-                  <div class="text-left">
-                    КОНТАКТНОЕ ЛИЦО<br>
-                    Пример: Петренко Петр Петрович, менеджер, email@email.com. , +XX XXX XXX XXXX
+                  <div class="column_2">
+                    <span>200</span>
                   </div>
-                  <button class="my_button btn_gray m-0">CHANGE</button>
-                </div>
-                <label class="w-100">НАЗВАНИЕ
-                  <input class="my_input form-control" type="text" name="name" placeholder="Пример: ООО Мотор или ФОП Петренко Петр Петрович">
-                </label>
-                <div class="buttons flex">
-                  <button class="my_button btn_white">ДОБАВИТЬ АДРЕС</button>
-                  <button class="my_button btn_white">ДОБАВИТЬ ПРОФИЛЬ</button>
-                  <button class="my_button btn_green">СОХРАНИТЬ</button>
+                  <div class="column_3">
+                    <div class="">20 003 400,00</div>
+                  </div>
+                  <div class="img_trash"><img src="img/basket/trash.png" alt="trash"></div>
                 </div>
               </div>
-            </form>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="text-center" id="title_password-change">ИЗМЕНИТЬ ПАРОЛЬ</div>
-            <form class="mb-4" action="">
-              <div class="flex half-width">
-                <label>ТЕКУЩИЙ ПАРОЛЬ
-                  <input type="password" name="password" class="my_input form-control"placeholder="Current password">
-                </label>
-                <label>НОВЫЙ ПАРОЛЬ
-                  <input type="password" name="password"  class="my_input form-control" placeholder="New password">
-                </label>
-                <label>ПОВТОРИТЬ ПАРОЛЬ 
-                  <input type="password" name="password"  class="my_input form-control" placeholder="Repeat password">
-                </label>
-                <button class="my_button btn_green m-0 mb-2 align-self-end">СОХРАНИТЬ</button>
+              <div class="flex justify-content-between align-items-center mt-3">
+                <div>СТАТУС</div>
+                <div><img src="img/icons/greenHeart.png" alt="heart"> Запрос удовлетворен</div>
+                <div><img src="img/icons/redHeart.png" alt="heart"> Запрос отклонён</div>
+                <div><img src="img/icons/yellowHeart.png" alt="heart"> Запрос удовлетворен в какой-то мере</div>
               </div>
-            </form>
-            <div class="text-center mb-2"> ИЗМЕНИТЬ E-MAIL</div>
-            <form class="" action="">
-              <div class="flex half-width">
-                <label>ТЕКУЩИЙ E-MAIL АДРЕС
-                  <input type="email" name="email" class="my_input form-control"placeholder="Current e-mail address">
-                </label>
-                <label>НОВЫЙ E-MAIL АДРЕС
-                  <input type="email" name="email"  class="my_input form-control" placeholder="New e-mail address">
-                </label>
-                <label>ПОДТВЕРДИТЬ E-MAIL АДРЕС
-                  <input type="email" name="email"  class="my_input form-control" placeholder="Confirm e-mail address">
-                </label>
-                <button class="my_button btn_green m-0 mb-2 align-self-end">СОХРАНИТЬ</button>
-              </div>
-            </form>
-            <div class="text-center mb-2 mt-4">ОТКАЗАТЬСЯ ОТ РАССЫЛКИ</div>
-            <button class="my_button btn_gray  align-self-end">ОТКАЗАТЬСЯ</button>
-            <div class="text-center mb-2 mt-4">  УДАЛИТЬ МОЮ УЧЕТНУЮ ЗАПИСЬ</div>
-            <button class="my_button btn_gray  align-self-end">УДАЛИТЬ</button>
+            </div>
           </div>
         </div>
       </div>

@@ -195,7 +195,27 @@ $('.myAccNav a').each(function () {             // получаем все ну�
   if(location == link) {               // при совпадении адреса ссылки и адреса окна
       $('.myAccNav a').removeClass('active')
       $(this).addClass('active');  //добавляем класс
-  // } else if($('.nav a').hasClass('active')){
-      
   }
 });
+
+/*::::::::::::: Accordeon Active item:::::::::::::*/
+$(".purchase .accordeon_content").not(":first").hide();
+$(".myChat .accordeon_content").not(":first").hide();
+$('.accordeon_head').on('click', function(){
+  $(this).toggleClass('active');
+  $(this).next('.accordeon_content').slideToggle(400); 
+});
+
+/*::::::::::::: chatroom Active item:::::::::::::*/
+// $(".purchase_content").not(":first").hide();
+// $('.purchase_head').on('click', function(){
+//   $(this).toggleClass('active');
+//   $(this).next('.purchase_content').slideToggle(400); 
+// });
+
+
+// function open_content(event){
+//   $('.purchase_head').toggleClass('active');
+//   $('.purchase_head').next('.purchase_content').slideToggle(400);
+//   console.log(this)
+// };

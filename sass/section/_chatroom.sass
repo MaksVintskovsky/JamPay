@@ -1,0 +1,33 @@
+.chatroom
+    font-size: 13px
+    .half-width
+        >div, 
+            width: 49%
+        label
+            width: 100%
+    .accordeon_head
+        justify-content: start
+        
+    .accordeon_head_item
+        margin-right: 20px
+    .row:last-child
+        margin-top: 30px
+        @media(min-width:992px)
+            margin-top: 0
+.myComment
+    .accordeon_content
+        border: none
+    .comment
+        width: 100%
+.img_trash
+    position: absolute
+    right: 30px
+    top: 50%
+    transform: translateY(-50%)
+    width: 14px
+    transition: 0.2s
+    cursor: pointer
+    img 
+        width: 100%
+    &:hover
+        width: 16px

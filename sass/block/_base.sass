@@ -26,6 +26,34 @@ html
 	.small-text
 		font-size: 13px
 		font-weight: 300
+	.my_dropdown
+		height: 26px
+		border: 1px solid $gray
+		position: relative
+		&::before
+			position: absolute
+			content: ""
+			width: 4px
+			height: 6px
+			right: 5px
+			top: 50%
+			margin-top: -3px
+			border-left: 3px solid transparent
+			border-right: 3px solid transparent
+			border-top: 6px solid #8a999c
+	.my_dropdown_menu
+		border-radius: 0
+		min-width: 100%
+		color: $gray
+		font-size: 13px
+		font-weight: 300
+		margin: 0
+		li 
+			padding: 3px 10px
+			cursor: pointer
+			&:hover
+				background-color: $gray
+				color: #fff
 .breadcrumbs
 	text-align: left
 	font-size: 13px
@@ -37,6 +65,7 @@ html
 	width: 158px
 	height: 28px
 	border: none
+	text-align: center
 	text-transforn: uppercase
 	font-size: 13px
 	font-weight: 400
@@ -125,7 +154,21 @@ textarea:-ms-input-placeholder
 	font-size: 13px
 	color: $gray
 	font-weight: 400
-
+.my_modal
+	.modal_dialog_change
+		margin: 0
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)!important
+		width: 400px
+		border: 1px solid $gray
+		padding: 10px 8px 20px
+		background-color: #fff
+		font-size: 15px
+		height: auto
+		p
+			font-size: 13px
+			text-align: stretch
 .d-n-mob-span
 	display: none
 	@media(min-width:768px)
@@ -145,8 +188,34 @@ textarea:-ms-input-placeholder
 	font-weight: 400
 .d-b
 	display: block!important
-
-
+.cursor
+	cursor: pointer
+.w-80
+	width: 80%
+.accordeon_head
+    position: relative
+    padding: 10px 40px 10px 0
+    justify-content: space-between
+    cursor: pointer
+    &::after
+        position: absolute
+        content: ''
+        width: 10px
+        height: 10px
+        right: 8px
+        top: 50%
+        margin-top: -5px
+        border-top: 5px solid transparent
+        border-bottom: 5px solid transparent
+        border-left: 10px solid #8a999c
+        transition: 0.3s
+.accordeon_head.active
+    &::after
+        transform: rotate(90deg)
+.accordeon_head_item
+    margin-right: 10px
+.accordeon_content
+	border-top: 1px solid $gray
 
 
 

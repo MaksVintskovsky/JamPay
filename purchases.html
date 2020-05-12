@@ -206,137 +206,401 @@
     </header>
     <!--::::::::::::: // Header::::::::::::: !-->
 
-    <!--::::::::::::: MyProfile::::::::::::: !-->
+    <!--::::::::::::: purchases::::::::::::: !-->
     <div class="container-fluid">
-      <div class="myProfile base_style">
-        <div class="breadcrumbs d-n-mob">Homepage -> Мой аккаунт -> Мой профиль</div>
+      <div class="purchases base_style">
+        <div class="breadcrumbs d-n-mob">Homepage -> Мой аккаунт -> Покупки</div>
         <div class="myAccNav flex base_style">
           <a href="dashboard.html" class="nav_item">
-            <img class="nav_item_img" src="img/icons/dashboard.png" alt="img">
+            <!-- <img class="nav_item_img_dashboard" src="img/icons/dashboard.png" alt="img"> -->
+            <div class=" nav_item_img_dashboard"></div>
             <div class="nav_item_name">DASHBOARD</div>
           </a>
           <a href="myProfile.html" class="nav_item active">
-            <img class="nav_item_img" src="img/icons/myprof.png" alt="img">
+            <div class=" nav_item_img_myprof"></div>
             <div class="nav_item_name">МОЙ ПРОФИЛЬ</div>
           </a>
           <a href="chatroom.html" class="nav_item">
-            <img class="nav_item_img" src="img/icons/chatroom.png" alt="img">
+            <!-- <img class="nav_item_img nav_item_img_chatroom" src="img/icons/chatroom.png" alt="img"> -->
+            <div class=" nav_item_img_chatroom"></div>
             <div class="nav_item_name">CHATROOM</div>
             <div class="nav_item_num">5</div>
           </a>
           <a href="purchases.html" class="nav_item">
-            <img class="nav_item_img" src="img/icons/purchases.png" alt="img">
+            <!-- <img class="nav_item_img" src="img/icons/purchases.png" alt="img"> -->
+            <div class=" nav_item_img_purchases"></div>
             <div class="nav_item_name">ПОКУПКИ</div>
             <div class="nav_item_num">3</div>
           </a>
           <a href="favorite.html" class="nav_item">
-            <img class="nav_item_img" src="img/icons/like.png" alt="img">
+            <!-- <img class="nav_item_img" src="img/icons/like.png" alt="img"> -->
+            <div class=" nav_item_img_like"></div>
             <div class="nav_item_name">ИЗБРАННЫЕ</div>
             <div class="nav_item_num">1</div>
           </a>
         </div>
-        <div class="breadcrumbs d-n-desc mb-3">Homepage -> Мой аккаунт -> Мой профиль</div>
+        <div class="breadcrumbs d-n-desc mb-3">Homepage -> Мой аккаунт -> Покупки</div>
         <div class="row mb-4">
           <div class="col-12 col-lg-6">
-            <div class="text-center mb-3">МОИ ДАННЫЕ</div>
-            <form class="" action="">
-              <div class=" form-group text-center my_data_radio mb-1">
-                <input class="" type="radio" id="company" name="type" >
-                <label for="company">КОМПАНИЯ</label>
-                <input class="" type="radio" id="entrepreneur" name="type">
-                <label for="entrepreneur">ПРЕДПРИНИМАТЕЛЬ</label>
-                <input class=" " type="radio" id="individual" name="type">
-                <label for="individual">ФИЗИЧЕСКОЕ ЛИЦО</label>
+            <div class="purchase">
+            <div class="accordeon_head active flex">
+              <div class="accordeon_head_item">20/02/2020 12:20:59</div>
+              <div class="accordeon_head_item">ЗАКАЗ№  <span>200200020002000</span></div>
+              <div class="accordeon_head_item">ИТОГО: <span>20 003 600,00 </span></div>
+              <div class="accordeon_head_item">СТАТУС: <span>ОТПРАВЛЕН</span> </div>
+            </div>
+            <div class="accordeon_content">
+              <div class="purchase_data">
+                <span>СТАТУС:</span><span> Данные вашего заказа полны. Ожидание входа платежа.</span><br>
+                <span>ПРОДАВЕЦ:</span><span> DMG-MORI</span><br>
+                <span>ДОСТАВКА:</span><span> через Новая Почта</span><br>
+                <span>СПОСОБ ОПЛАТЫ:</span><span> Кредитная карта</span><br>
+                <span>ПРИКРЕПЛЕННЫЕ ДОКУМЕНТЫ:</span><span> Договор.pdf , <span class="cursor" data-toggle="modal" data-target="#purchase_download">Счет.pdf</span>  , Расходная накладная.xls , ТТН.doc</span>
               </div>
-              <div class=" form-group">
-                <label class="w-100">НАЗВАНИЕ
-                  <input class="my_input form-control" type="text" name="name" placeholder="Пример: ООО Мотор или ФОП Петренко Петр Петрович">
-                </label>
-                <div class="flex myProfile_change mb-3">
-                  <div class="text-left">
-                    АДРЕС (для компаний и предпринимателей укажите юридический) <br>
-                    Пример: офис 696, улица Мира,33, Киев, Украина, 01008
+              <div class="buttons flex">
+                <button class="my_button btn_green">ДОБАВИТЬ ДОКУМЕНТ</button>
+                <a href="#" class="my_button btn_white">НАПИСАТЬ ПРОДАВЦУ</a>
+                <button class="my_button btn_gray" data-toggle="modal" data-target="#purchase_return">ОФОРМИТЬ ВОЗВРАТ</button>
+              </div>
+              <div class="basket">
+                <div class="flex basket-header">
+                  <span class="column_1">ПРОДУКТ</span>
+                  <span class="column_2">КОЛИЧЕСТВО</span>
+                  <span class="column_3">ВСЕГО</span>
+                </div>
+                <div class="basket-items" id="basket_scroll">
+                  <div class="basket-item-block flex">
+                    <div class="basket-item flex column_1">
+                      <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
+                      <div class="basket-item-text text-left">
+                        <div class="product-title">DMG MORI DMU 50</div>
+                        <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                        <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                        <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
+                      </div>
+                    </div>
+                    <div class="column_2">
+                      <span>200</span>
+                      
+                    </div>
+                    <div class="column_3">
+                      <div class="">20 003 400,00</div>
+                    </div>
                   </div>
-                  <button class="my_button btn_gray m-0">CHANGE</button>
-                </div>
-                <div class="flex half-width">
-                  <label>E-MAIL
-                    <input type="email" name="email" class="my_input form-control" placeholder="E-mail">
-                  </label>
-                  <label>ТЕЛЕФОН (мобильный)
-                    <input type="text" name="phone"  class="my_input form-control" placeholder="+ХХ XXX XXX XXXX">
-                  </label>
-                  <label>КОД ЕГРПОУ (для Компаний) 
-                    <input type="text" name="name"  class="my_input form-control" placeholder="8 цифр">
-                  </label>
-                  <label>РКПН (для ФОП)
-                    <input type="text" name="name"  class="my_input form-control" placeholder="10 цифр">
-                  </label>
-                  <label>РАСЧЕТНЫЙ СЧЕТ В ФОРМАТЕ IBAN
-                    <input type="text" name="name"  class="my_input form-control" placeholder="Пример: UA 89 351005 1234567890123456789">
-                  </label>
-                  <label>ДИРЕКТОР (подписант)
-                    <input type="text" name="name"  class="my_input form-control" placeholder="ФИО">
-                  </label>
-                </div>
-                <div class="flex myProfile_change mb-2">
-                  <div class="text-left">
-                    КОНТАКТНОЕ ЛИЦО<br>
-                    Пример: Петренко Петр Петрович, менеджер, email@email.com. , +XX XXX XXX XXXX
+                  <div class="basket-item-block flex">
+                    <div class="basket-item flex column_1">
+                      <div class="basket-item-img"><img src="img/basket/bask_2.jpg" alt=""></div>
+                      <div class="basket-item-text text-left">
+                        <div class="product-title">SAMSUNG ADG 10</div>
+                        <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                        <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                        <div class="">ЦЕНА ЗА ЕДИНИЦУ: 180 800,00  ₴</div>
+                      </div>
+                    </div>
+                    <div class="column_2">
+                      <span>200</span>
+                      
+                    </div>
+                    <div class="column_3">
+                      <div class="">20 003 400,00</div>
+                    </div>
                   </div>
-                  <button class="my_button btn_gray m-0">CHANGE</button>
+                  <div class="basket-item-block flex">
+                    <div class="basket-item flex column_1">
+                      <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
+                      <div class="basket-item-text text-left">
+                        <div class="product-title">DMG MORI DMU 50</div>
+                        <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                        <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                        <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
+                      </div>
+                    </div>
+                    <div class="column_2">
+                      <span>200</span>
+                      
+                    </div>
+                    <div class="column_3">
+                      <div class="">20 003 400,00</div>
+                    </div>
+                  </div>
                 </div>
-                <label class="w-100">НАЗВАНИЕ
-                  <input class="my_input form-control" type="text" name="name" placeholder="Пример: ООО Мотор или ФОП Петренко Петр Петрович">
-                </label>
-                <div class="buttons flex">
-                  <button class="my_button btn_white">ДОБАВИТЬ АДРЕС</button>
-                  <button class="my_button btn_white">ДОБАВИТЬ ПРОФИЛЬ</button>
-                  <button class="my_button btn_green">СОХРАНИТЬ</button>
+                <div class="w100 text-right flex">
+                  <div class="basket-total flex">
+                    <div class="flex text-left mr-3">
+                      <span>СТОИМОСТЬ ТОВАРОВ: </span>
+                      <span>СТОИМОСТЬ ДОСТАВКИ: </span>
+                      <span class="big-text">ОБЩАЯ СТОИМОСТЬ: </span>
+                    </div>
+                    <div class="flex text-center">
+                      <span>20 022 200,00 ₴</span>
+                      <span>200,00 ₴</span>
+                      <span class="big-text">33 022 200,00 ₴</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </form>
+            </div>
+            </div>
           </div>
           <div class="col-12 col-lg-6">
-            <div class="text-center" id="title_password-change">ИЗМЕНИТЬ ПАРОЛЬ</div>
-            <form class="mb-4" action="">
-              <div class="flex half-width">
-                <label>ТЕКУЩИЙ ПАРОЛЬ
-                  <input type="password" name="password" class="my_input form-control"placeholder="Current password">
-                </label>
-                <label>НОВЫЙ ПАРОЛЬ
-                  <input type="password" name="password"  class="my_input form-control" placeholder="New password">
-                </label>
-                <label>ПОВТОРИТЬ ПАРОЛЬ 
-                  <input type="password" name="password"  class="my_input form-control" placeholder="Repeat password">
-                </label>
-                <button class="my_button btn_green m-0 mb-2 align-self-end">СОХРАНИТЬ</button>
+            <div class="purchase">
+              <div class="accordeon_head flex">
+                <div class="accordeon_head_item">20/02/2020 12:20:59</div>
+                <div class="accordeon_head_item">ЗАКАЗ№  <span>200200020002000</span></div>
+                <div class="accordeon_head_item">ИТОГО: <span>20 003 600,00 </span></div>
+                <div class="accordeon_head_item">СТАТУС: <span>ОТПРАВЛЕН</span> </div>
               </div>
-            </form>
-            <div class="text-center mb-2"> ИЗМЕНИТЬ E-MAIL</div>
-            <form class="" action="">
-              <div class="flex half-width">
-                <label>ТЕКУЩИЙ E-MAIL АДРЕС
-                  <input type="email" name="email" class="my_input form-control"placeholder="Current e-mail address">
-                </label>
-                <label>НОВЫЙ E-MAIL АДРЕС
-                  <input type="email" name="email"  class="my_input form-control" placeholder="New e-mail address">
-                </label>
-                <label>ПОДТВЕРДИТЬ E-MAIL АДРЕС
-                  <input type="email" name="email"  class="my_input form-control" placeholder="Confirm e-mail address">
-                </label>
-                <button class="my_button btn_green m-0 mb-2 align-self-end">СОХРАНИТЬ</button>
+              <div class="accordeon_content">
+                <div class="purchase_data">
+                  <span>СТАТУС:</span><span> Данные вашего заказа полны. Ожидание входа платежа.</span><br>
+                  <span>ПРОДАВЕЦ:</span><span> DMG-MORI</span><br>
+                  <span>ДОСТАВКА:</span><span> через Новая Почта</span><br>
+                  <span>СПОСОБ ОПЛАТЫ:</span><span> Кредитная карта</span><br>
+                  <span>ПРИКРЕПЛЕННЫЕ ДОКУМЕНТЫ:</span><span> Договор.pdf ,Счет.pdf , Расходная накладная.xls , ТТН.doc</span>
+                </div>
+                <div class="buttons flex">
+                  <button class="my_button btn_green">ДОБАВИТЬ ДОКУМЕНТ</button>
+                  <a href="#" class="my_button btn_white">НАПИСАТЬ ПРОДАВЦУ</a>
+                  <button class="my_button btn_gray" data-toggle="modal" data-target="#purchase_return">ОФОРМИТЬ ВОЗВРАТ</button>
+                </div>
+                <div class="basket">
+                  <div class="flex basket-header">
+                    <span class="column_1">ПРОДУКТ</span>
+                    <span class="column_2">КОЛИЧЕСТВО</span>
+                    <span class="column_3">ВСЕГО</span>
+                  </div>
+                  <div class="basket-items" id="basket_scroll">
+                    <div class="basket-item-block flex">
+                      <div class="basket-item flex column_1">
+                        <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
+                        <div class="basket-item-text text-left">
+                          <div class="product-title">DMG MORI DMU 50</div>
+                          <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                          <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                          <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
+                        </div>
+                      </div>
+                      <div class="column_2">
+                        <span>200</span>
+                        
+                      </div>
+                      <div class="column_3">
+                        <div class="">20 003 400,00</div>
+                      </div>
+                    </div>
+                    <div class="basket-item-block flex">
+                      <div class="basket-item flex column_1">
+                        <div class="basket-item-img"><img src="img/basket/bask_2.jpg" alt=""></div>
+                        <div class="basket-item-text text-left">
+                          <div class="product-title">SAMSUNG ADG 10</div>
+                          <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                          <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                          <div class="">ЦЕНА ЗА ЕДИНИЦУ: 180 800,00  ₴</div>
+                        </div>
+                      </div>
+                      <div class="column_2">
+                        <span>200</span>
+                        
+                      </div>
+                      <div class="column_3">
+                        <div class="">20 003 400,00</div>
+                      </div>
+                    </div>
+                    <div class="basket-item-block flex">
+                      <div class="basket-item flex column_1">
+                        <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
+                        <div class="basket-item-text text-left">
+                          <div class="product-title">DMG MORI DMU 50</div>
+                          <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                          <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                          <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
+                        </div>
+                      </div>
+                      <div class="column_2">
+                        <span>200</span>
+                        
+                      </div>
+                      <div class="column_3">
+                        <div class="">20 003 400,00</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w100 text-right flex">
+                    <div class="basket-total flex">
+                      <div class="flex text-left mr-3">
+                        <span>СТОИМОСТЬ ТОВАРОВ: </span>
+                        <span>СТОИМОСТЬ ДОСТАВКИ: </span>
+                        <span class="big-text">ОБЩАЯ СТОИМОСТЬ: </span>
+                      </div>
+                      <div class="flex text-center">
+                        <span>20 022 200,00 ₴</span>
+                        <span>200,00 ₴</span>
+                        <span class="big-text">33 022 200,00 ₴</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </form>
-            <div class="text-center mb-2 mt-4">ОТКАЗАТЬСЯ ОТ РАССЫЛКИ</div>
-            <button class="my_button btn_gray  align-self-end">ОТКАЗАТЬСЯ</button>
-            <div class="text-center mb-2 mt-4">  УДАЛИТЬ МОЮ УЧЕТНУЮ ЗАПИСЬ</div>
-            <button class="my_button btn_gray  align-self-end">УДАЛИТЬ</button>
+            </div>
+            <div class="purchase">
+              <div class="accordeon_head flex">
+                <div class="accordeon_head_item">20/02/2020 12:20:59</div>
+                <div class="accordeon_head_item">ЗАКАЗ№  <span>200200020002000</span></div>
+                <div class="accordeon_head_item">ИТОГО: <span>20 003 600,00 </span></div>
+                <div class="accordeon_head_item">СТАТУС: <span>ОТПРАВЛЕН</span> </div>
+              </div>
+              <div class="accordeon_content">
+                <div class="purchase_data">
+                  <span>СТАТУС:</span><span> Данные вашего заказа полны. Ожидание входа платежа.</span><br>
+                  <span>ПРОДАВЕЦ:</span><span> DMG-MORI</span><br>
+                  <span>ДОСТАВКА:</span><span> через Новая Почта</span><br>
+                  <span>СПОСОБ ОПЛАТЫ:</span><span> Кредитная карта</span><br>
+                  <span>ПРИКРЕПЛЕННЫЕ ДОКУМЕНТЫ:</span><span> Договор.pdf ,Счет.pdf , Расходная накладная.xls , ТТН.doc</span>
+                </div>
+                <div class="buttons flex">
+                  <button class="my_button btn_green">ДОБАВИТЬ ДОКУМЕНТ</button>
+                  <a href="#" class="my_button btn_white">НАПИСАТЬ ПРОДАВЦУ</a>
+                  <button class="my_button btn_gray" data-toggle="modal" data-target="#purchase_return">ОФОРМИТЬ ВОЗВРАТ</button>
+                </div>
+                <div class="basket">
+                  <div class="flex basket-header">
+                    <span class="column_1">ПРОДУКТ</span>
+                    <span class="column_2">КОЛИЧЕСТВО</span>
+                    <span class="column_3">ВСЕГО</span>
+                  </div>
+                  <div class="basket-items" id="basket_scroll">
+                    <div class="basket-item-block flex">
+                      <div class="basket-item flex column_1">
+                        <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
+                        <div class="basket-item-text text-left">
+                          <div class="product-title">DMG MORI DMU 50</div>
+                          <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                          <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                          <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
+                        </div>
+                      </div>
+                      <div class="column_2">
+                        <span>200</span>
+                        
+                      </div>
+                      <div class="column_3">
+                        <div class="">20 003 400,00</div>
+                      </div>
+                    </div>
+                    <div class="basket-item-block flex">
+                      <div class="basket-item flex column_1">
+                        <div class="basket-item-img"><img src="img/basket/bask_2.jpg" alt=""></div>
+                        <div class="basket-item-text text-left">
+                          <div class="product-title">SAMSUNG ADG 10</div>
+                          <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                          <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                          <div class="">ЦЕНА ЗА ЕДИНИЦУ: 180 800,00  ₴</div>
+                        </div>
+                      </div>
+                      <div class="column_2">
+                        <span>200</span>
+                        
+                      </div>
+                      <div class="column_3">
+                        <div class="">20 003 400,00</div>
+                      </div>
+                    </div>
+                    <div class="basket-item-block flex">
+                      <div class="basket-item flex column_1">
+                        <div class="basket-item-img"><img src="img/basket/bask_1.jpg" alt=""></div>
+                        <div class="basket-item-text text-left">
+                          <div class="product-title">DMG MORI DMU 50</div>
+                          <div class="product-num small-text">SKU: <span>102030405060708090</span></div>
+                          <div class="small-text">Ориентировочная дата доставки 8 марта 2020 года</div>
+                          <div class="">ЦЕНА ЗА ЕДИНИЦУ: 20 003 400,00 ₴</div>
+                        </div>
+                      </div>
+                      <div class="column_2">
+                        <span>200</span>
+                        
+                      </div>
+                      <div class="column_3">
+                        <div class="">20 003 400,00</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w100 text-right flex">
+                    <div class="basket-total flex">
+                      <div class="flex text-left mr-3">
+                        <span>СТОИМОСТЬ ТОВАРОВ: </span>
+                        <span>СТОИМОСТЬ ДОСТАВКИ: </span>
+                        <span class="big-text">ОБЩАЯ СТОИМОСТЬ: </span>
+                      </div>
+                      <div class="flex text-center">
+                        <span>20 022 200,00 ₴</span>
+                        <span>200,00 ₴</span>
+                        <span class="big-text">33 022 200,00 ₴</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my_modal modal fade base_style"  id="purchase_return" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal_dialog_change" role="document">
+            <p>Как официальный продавец, все наши предлагаемые товары имеют гарантию . 
+              Мы предлагаем гарантийное обслуживание, собирая затронутые товары по нашей 
+              стоимости и отправляя их производителю, а также делаем всю дальнейшую 
+              обработку. Если производитель признает дефект изготовления, все сгенерированные 
+              затраты на транспортировку, как для обратной отправки, так и для отгрузки 
+              замененного или отремонтированного изделия, оплачиваются нами. Мы оставляем за 
+              собой право отказать в обмене товара в случае, если возвращенный товар не прибыл 
+              в условиях, указанных в нашей политике возврата. Поэтому, как только мы сможем 
+              получить какой-либо ответ по вашему делу, мы сможем действовать немедленно, как
+              указано брендом. Мы будем информированы напрямую о том, была ли принята 
+              гарантия, и если да, когда изготовитель отремонтирует или заменит товар. Для 
+              обработки вашей гарантии просим вас предоставить нам краткое описание дефекта, а 
+              также хотя бы одну фотографию, на которой может быть показано повреждение / 
+              дефект. Картинки можно прикрепить прямо к форме. Как только мы получим любую 
+              необходимую информацию, мы немедленно свяжемся с вами, чтобы договориться о 
+              необходимых действиях.</p>
+              <div class="text-left">УКАЖИТЕ ВАШУ ПРИЧИНУ ДЛЯ ВОЗВРАТА ТОВАРА
+                <div class="my_dropdown dropdown-toggle mb-2" data-toggle="dropdown">
+                  <span>Товар не работает или не исправен</span>
+                  <ul class="dropdown-menu my_dropdown_menu">
+                    <li>Товар не работает или не исправен</li>
+                    <li>Товар не работает или не исправен</li>
+                    <li>Товар не работает или не исправен</li>
+                    <li>Товар не работает или не исправен</li>
+                    <li>Товар не работает или не исправен</li>
+                  </ul>
+                </div>
+              </div>
+              <form action="">
+                <div class=" form-group">
+                  <textarea name="message" class="form-textarea my_textarea form-control" placeholder="Пожалуйста, сделайте краткое описание повреждения или дефекта."></textarea>
+                  <div class="flex half-width ">
+                    <input class="my_input form-control" type="name"  name="photo" placeholder="1. Прикрепите фото с дефектом товара">
+                    <input class="my_input form-control" type="name"  name="photo" placeholder="2. Прикрепите фото с дефектом товара">
+                    <input class="my_input form-control" type="name"  name="photo" placeholder="3. Прикрепите фото с дефектом товара">
+                    <input class="my_input form-control" type="name"  name="photo" placeholder="4. Прикрепите фото с дефектом товара">
+                    <input class="my_input form-control" type="name"  name="photo" placeholder="5. Прикрепите фото с дефектом товара">
+                    <input class="my_input form-control" type="name"  name="photo" placeholder="6. Прикрепите фото с дефектом товара">
+                  </div>
+                  <label for="passportEnter">УКАЖИТЕ ВАШ ПАСПОРТ / ИДЕНТИФИКАЦИОННЫЙ НОМЕР </label><br>
+                  <input class="my_input form-control" type="text" id="passportEnter" name="name">
+                  <button class="my_button btn_green">ОТПРАВИТЬ</button>
+                </div>
+              </form>
+          </div>
+        </div>
+        <div class="my_modal  modal fade base_style"  id="purchase_download" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog purchase_download modal_dialog_change" role="document">
+            <div class="text-center"><img src="img/icons/file.png" alt="file"><span>СЧЕТ.PDF</span></div>
+            <button class="my_button btn_white">СКАЧАТЬ</button>
+            <button class="my_button btn_green">ПОДПИСАТЬ ЭЦП</button>
           </div>
         </div>
       </div>
     </div>
-    <!--::::::::::::: // MyProfile::::::::::::: !-->
+    <!--::::::::::::: // purchases::::::::::::: !-->
 
         <!--::::::::::::: Footer::::::::::::: !-->
     <div id="footer" class="base_style">
