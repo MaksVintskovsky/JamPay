@@ -1525,13 +1525,19 @@ body .card {
     display: inline-block; }
 
 .favorite .basket {
-  margin: 0px 0; }
+  margin: 0px 0 30px; }
 
 .favorite .basket-header, .favorite .basket-item-block {
   position: relative; }
 
 .favorite .img_trash {
   right: 5px; }
+
+.favorite .discount_request {
+  width: 30px; }
+
+.favorite .price_request {
+  width: auto; }
 
 #footer {
   margin-top: 5px;

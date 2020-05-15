@@ -206,7 +206,7 @@
     </header>
     <!--::::::::::::: // Header::::::::::::: !-->
 
-    <!--::::::::::::: MyProfile::::::::::::: !-->
+    <!--::::::::::::: favorite::::::::::::: !-->
     <div class="container-fluid">
       <div class="favorite base_style">
         <div class="breadcrumbs d-n-mob">Homepage -> Мой аккаунт -> Избранные</div>
@@ -269,18 +269,37 @@
                   <div class="img_trash"><img src="img/basket/trash.png" alt="trash"></div>
                 </div>
               </div>
-              <div class="flex justify-content-between align-items-center mt-3">
-                <div>СТАТУС</div>
-                <div><img src="img/icons/greenHeart.png" alt="heart"> Запрос удовлетворен</div>
-                <div><img src="img/icons/redHeart.png" alt="heart"> Запрос отклонён</div>
-                <div><img src="img/icons/yellowHeart.png" alt="heart"> Запрос удовлетворен в какой-то мере</div>
-              </div>
+              <form action="">
+                <div class="flex justify-content-between align-items-center mt-3">
+                  <div>СТАТУС</div>
+                  <div><img src="img/icons/greenHeart.png" alt="heart"> Запрос удовлетворен</div>
+                  <div><img src="img/icons/redHeart.png" alt="heart"> Запрос отклонён</div>
+                  <div><img src="img/icons/yellowHeart.png" alt="heart"> Запрос удовлетворен в какой-то мере</div>
+                </div>
+                <div class="flex  mt-4">
+                  <label class="mr-4">ЗАПРОСИТЬ СКИДКУ В РАЗМЕРЕ
+                    <div class="flex align-items-center justify-content-center mt-1">
+                      <input type="text" name="name" class="my_input form-control discount_request mr-2" placeholder="15"> <span>%</span> 
+                    </div>
+                  </label>
+                  <label class="">СООБЩИТЬ КОГДА ЦЕНА ТОВАРА ДОСТИГНЕТ
+                    <div class="flex align-items-center justify-content-center mt-1">
+                      <input type="text" name="name" class="my_input form-control price_request mr-2" placeholder="000 000 000"> <span>ЗА ЕДИНИЦУ</span> 
+                    </div>
+                  </label>
+                </div>
+                <div class="buttons flex">
+                  <button class="my_button btn_white">ОТПРАВИТЬ</button>
+                  <button class="my_button btn_white">СЛЕДИТЬ</button>
+                  <button class="my_button btn_green">В КОРЗИНУ</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--::::::::::::: // MyProfile::::::::::::: !-->
+    <!--::::::::::::: // favorite::::::::::::: !-->
 
         <!--::::::::::::: Footer::::::::::::: !-->
     <div id="footer" class="base_style">
