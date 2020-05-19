@@ -219,3 +219,16 @@ $('.accordeon_head').on('click', function(){
 //   $('.purchase_head').next('.purchase_content').slideToggle(400);
 //   console.log(this)
 // };
+// $('.my_data_radio label').on('click', function(){
+//   // console.log(1)
+//   if($('.my_data_radio #company:checked')){
+//     $("#my_data_name").text("ИМЯ ФАМИЛИЯ");
+//     console.log(1)
+//   }else {
+//     $("#my_data_name").text("НАЗВАНИЕ");
+//   }
+// })
+$('.my_button').on('click', function(e){
+  console.log(1)
+  e.preventDefault()
+})

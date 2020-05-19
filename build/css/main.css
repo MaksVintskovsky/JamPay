@@ -10,9 +10,8 @@
   font-weight: 400;
   font-style: normal; }
 
-html {
-  min-width: 640px;
-  width: 100%; }
+body {
+  min-width: 640px; }
 
 .base_style {
   font-family: 'Oswald', sans-serif;
@@ -143,47 +142,39 @@ html {
 
 input::-webkit-input-placeholder {
   font-size: 13px;
-  color: #8A999C;
-  font-weight: 400; }
+  color: #8A999C; }
 
 input::-moz-placeholder {
   font-size: 13px;
-  color: #8A999C;
-  font-weight: 400; }
+  color: #8A999C; }
 
 input::-moz-placeholder {
   font-size: 13px;
-  color: #8A999C;
-  font-weight: 400; }
+  color: #8A999C; }
 
 input::-ms-input-placeholder {
   font-size: 13px;
-  color: #8A999C;
-  font-weight: 400; }
+  color: #8A999C; }
 
 textarea::-webkit-input-placeholder {
   padding-top: 5px;
   font-size: 13px;
-  color: #8A999C;
-  font-weight: 400; }
+  color: #8A999C; }
 
 textarea:-moz-placeholder {
   padding-top: 5px;
   font-size: 13px;
-  color: #8A999C;
-  font-weight: 400; }
+  color: #8A999C; }
 
 textarea::-moz-placeholder {
   padding-top: 5px;
   font-size: 13px;
-  color: #8A999C;
-  font-weight: 400; }
+  color: #8A999C; }
 
 textarea:-ms-input-placeholder {
   padding-top: 5px;
   font-size: 13px;
-  color: #8A999C;
-  font-weight: 400; }
+  color: #8A999C; }
 
 .my_modal .modal_dialog_change {
   margin: 0;
@@ -233,6 +224,12 @@ textarea:-ms-input-placeholder {
 
 .w-80 {
   width: 80%; }
+
+.w-40 {
+  width: 40%; }
+
+.w-20 {
+  width: 20%; }
 
 .accordeon_head {
   position: relative;
@@ -1415,6 +1412,12 @@ body .card {
   font-size: 13px; }
   .myProfile form input {
     margin-top: 3px; }
+
+.myProfile .modal_dialog_change {
+  width: 95%; }
+  @media (min-width: 576px) {
+    .myProfile .modal_dialog_change {
+      max-width: 700px; } }
 
 .myProfile_change {
   -webkit-box-align: end;
