@@ -1419,6 +1419,13 @@ body .card {
     .myProfile .modal_dialog_change {
       max-width: 700px; } }
 
+.myProfile .buttons {
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin: 20px 0 30px; }
+  .myProfile .buttons button {
+    margin: 0; }
+
 .myProfile_change {
   -webkit-box-align: end;
   align-items: flex-end;
@@ -1429,6 +1436,8 @@ body .card {
 .my_data_radio label {
   position: relative;
   margin-right: 30px; }
+  .my_data_radio label:last-child {
+    margin-right: 0; }
   .my_data_radio label::before {
     content: "";
     display: inline-block;
