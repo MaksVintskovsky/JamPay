@@ -1512,14 +1512,14 @@ body .card {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 14px;
+  width: 16px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer; }
   .img_trash img {
     width: 100%; }
   .img_trash:hover {
-    width: 16px; }
+    width: 18px; }
 
 .purchases {
   font-size: 13px; }
