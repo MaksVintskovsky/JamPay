@@ -1103,8 +1103,7 @@ body .card {
   .button_change img {
     width: 45px;
     width: 100%;
-    margin-left: 3px;
-    margin-top: 5px; }
+    margin-left: 3px; }
 
 .sliders a {
   text-decoration: none;
