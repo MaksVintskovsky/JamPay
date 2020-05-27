@@ -1483,7 +1483,9 @@ body .card {
       margin-bottom: 42px; } }
 
 .chatroom {
-  font-size: 13px; }
+  font-size: 13px;
+  max-width: 900px;
+  margin: 0 auto; }
   .chatroom .half-width > div {
     width: 49%; }
   .chatroom .half-width label {
@@ -1495,9 +1497,6 @@ body .card {
     margin-right: 20px; }
   .chatroom .row:last-child {
     margin-top: 30px; }
-    @media (min-width: 992px) {
-      .chatroom .row:last-child {
-        margin-top: 0; } }
 
 .myComment .accordeon_content {
   border: none; }
@@ -1521,7 +1520,9 @@ body .card {
     width: 18px; }
 
 .purchases {
-  font-size: 13px; }
+  font-size: 13px;
+  max-width: 900px;
+  margin: 0 auto; }
   .purchases .modal_dialog_change .half-width {
     margin: 20px 0 0; }
     .purchases .modal_dialog_change .half-width input {
@@ -1545,20 +1546,28 @@ body .card {
     margin-bottom: 3px;
     display: inline-block; }
 
-.favorite .basket {
-  margin: 0px 0 30px; }
+.favorite {
+  max-width: 900px;
+  margin: 0 auto; }
+  .favorite .basket {
+    margin: 0px 0 30px; }
+  .favorite .basket-header, .favorite .basket-item-block {
+    position: relative; }
+  .favorite .img_trash {
+    right: 5px; }
+  .favorite .discount_request {
+    width: 30px; }
+  .favorite .price_request {
+    width: auto; }
+  .favorite .col-4 label, .favorite .col-5 label {
+    margin: 0 auto;
+    display: block; }
 
-.favorite .basket-header, .favorite .basket-item-block {
-  position: relative; }
-
-.favorite .img_trash {
-  right: 5px; }
-
-.favorite .discount_request {
-  width: 30px; }
-
-.favorite .price_request {
-  width: auto; }
+.request_status {
+  width: 25px;
+  margin: 0 auto; }
+  .request_status img {
+    width: 100%; }
 
 #footer {
   margin-top: 5px;
