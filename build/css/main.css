@@ -231,6 +231,10 @@ textarea:-ms-input-placeholder {
 .w-20 {
   width: 20%; }
 
+.w-900 {
+  max-width: 900px;
+  margin: 0 auto; }
+
 .accordeon_head {
   position: relative;
   padding: 10px 40px 10px 0;
@@ -1483,9 +1487,7 @@ body .card {
       margin-bottom: 42px; } }
 
 .chatroom {
-  font-size: 13px;
-  max-width: 900px;
-  margin: 0 auto; }
+  font-size: 13px; }
   .chatroom .half-width > div {
     width: 49%; }
   .chatroom .half-width label {
@@ -1520,9 +1522,7 @@ body .card {
     width: 18px; }
 
 .purchases {
-  font-size: 13px;
-  max-width: 900px;
-  margin: 0 auto; }
+  font-size: 13px; }
   .purchases .modal_dialog_change .half-width {
     margin: 20px 0 0; }
     .purchases .modal_dialog_change .half-width input {
@@ -1546,22 +1546,24 @@ body .card {
     margin-bottom: 3px;
     display: inline-block; }
 
-.favorite {
-  max-width: 900px;
-  margin: 0 auto; }
-  .favorite .basket {
-    margin: 0px 0 30px; }
-  .favorite .basket-header, .favorite .basket-item-block {
-    position: relative; }
-  .favorite .img_trash {
-    right: 5px; }
-  .favorite .discount_request {
-    width: 30px; }
-  .favorite .price_request {
-    width: auto; }
-  .favorite .col-4 label, .favorite .col-5 label {
-    margin: 0 auto;
-    display: block; }
+.favorite .basket {
+  margin: 0px auto 30px; }
+
+.favorite .basket-header, .favorite .basket-item-block {
+  position: relative; }
+
+.favorite .img_trash {
+  right: 5px; }
+
+.favorite .discount_request {
+  width: 30px; }
+
+.favorite .price_request {
+  width: auto; }
+
+.favorite .col-4 label, .favorite .col-5 label {
+  margin: 0 auto;
+  display: block; }
 
 .request_status {
   width: 25px;
