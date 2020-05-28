@@ -52,6 +52,10 @@ body {
       border-left: 3px solid transparent;
       border-right: 3px solid transparent;
       border-top: 6px solid #8a999c; }
+    .base_style .my_dropdown span {
+      line-height: 1.8;
+      margin-left: 10px;
+      font-weight: 300; }
   .base_style .my_dropdown_menu {
     border-radius: 0;
     min-width: 100%;
@@ -190,7 +194,7 @@ textarea:-ms-input-placeholder {
   height: auto; }
   .my_modal .modal_dialog_change p {
     font-size: 13px;
-    text-align: stretch; }
+    text-align: justify; }
 
 .d-n-mob-span {
   display: none; }
@@ -214,6 +218,9 @@ textarea:-ms-input-placeholder {
 
 .big-text {
   font-size: 17px;
+  font-weight: 400; }
+
+.regular {
   font-weight: 400; }
 
 .d-b {
@@ -995,7 +1002,7 @@ body .card {
 
 #basket_scroll::-webkit-scrollbar-track {
   opacity: 1;
-  border: 1px solid #8A999C; }
+  border: 1px solid transparent; }
 
 #basket_scroll::-webkit-scrollbar-thumb:hover {
   background: #777; }
@@ -1529,7 +1536,7 @@ body .card {
       width: 49%;
       height: 20px !important;
       padding-left: 3px !important;
-      margin-bottom: 10px; }
+      margin-bottom: 15px; }
   .purchases .purchase_download {
     width: 180px;
     padding-bottom: 0; }
@@ -1546,8 +1553,19 @@ body .card {
     margin-bottom: 3px;
     display: inline-block; }
 
+#purchase_return .modal_dialog_change {
+  width: 420px;
+  padding: 15px 18px 20px; }
+  #purchase_return .modal_dialog_change .btn_green {
+    margin: 10px 0 10px auto; }
+
+#purchase_download img {
+  margin-right: 10px; }
+
 .favorite .basket {
   margin: 0px auto 30px; }
+  .favorite .basket button {
+    margin: 20px auto; }
 
 .favorite .basket-header, .favorite .basket-item-block {
   position: relative; }
