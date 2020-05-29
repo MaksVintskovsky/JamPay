@@ -545,57 +545,98 @@
         </div>
         <div class="my_modal modal fade base_style"  id="purchase_return" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog modal_dialog_change" role="document">
-            <p class="small-text">Как официальный продавец, все наши предлагаемые товары имеют гарантию. 
-              Мы предлагаем гарантийное обслуживание, собирая затронутые товары по нашей 
-              стоимости и отправляя их производителю, а также делаем всю дальнейшую 
-              обработку. Если производитель признает дефект изготовления, все сгенерированные 
-              затраты на транспортировку, как для обратной отправки, так и для отгрузки 
-              замененного или отремонтированного изделия, оплачиваются нами. Мы оставляем за 
-              собой право отказать в обмене товара в случае, если возвращенный товар не прибыл 
-              в условиях, указанных в нашей политике возврата. Поэтому, как только мы сможем 
-              получить какой-либо ответ по вашему делу, мы сможем действовать немедленно, как
-              указано брендом. Мы будем информированы напрямую о том, была ли принята 
-              гарантия, и если да, когда изготовитель отремонтирует или заменит товар. Для 
-              обработки вашей гарантии просим вас предоставить нам краткое описание дефекта, а 
-              также хотя бы одну фотографию, на которой может быть показано повреждение / 
-              дефект. Картинки можно прикрепить прямо к форме. Как только мы получим любую 
-              необходимую информацию, мы немедленно свяжемся с вами, чтобы договориться о 
-              необходимых действиях.</p>
-              <div class="text-left"><span class="mb-1 d-b">УКАЖИТЕ ВАШУ ПРИЧИНУ ДЛЯ ВОЗВРАТА ТОВАРА</span> 
-                <div class="my_dropdown dropdown-toggle mb-3" data-toggle="dropdown">
-                  <span>Товар не работает или не исправен</span>
-                  <ul class="dropdown-menu my_dropdown_menu">
-                    <li>Товар не работает или не исправен</li>
-                    <li>Товар не работает или не исправен</li>
-                    <li>Товар не работает или не исправен</li>
-                    <li>Товар не работает или не исправен</li>
-                    <li>Товар не работает или не исправен</li>
-                  </ul>
-                </div>
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-              <form action="">
-                <div class=" form-group">
-                  <textarea name="message" class="form-textarea my_textarea form-control" placeholder="Пожалуйста, сделайте краткое описание повреждения или дефекта."></textarea>
-                  <div class="flex half-width ">
-                    <input class="my_input form-control" type="name"  name="photo" placeholder="1. Прикрепите фото с дефектом товара">
-                    <input class="my_input form-control" type="name"  name="photo" placeholder="2. Прикрепите фото с дефектом товара">
-                    <input class="my_input form-control" type="name"  name="photo" placeholder="3. Прикрепите фото с дефектом товара">
-                    <input class="my_input form-control" type="name"  name="photo" placeholder="4. Прикрепите фото с дефектом товара">
-                    <input class="my_input form-control" type="name"  name="photo" placeholder="5. Прикрепите фото с дефектом товара">
-                    <input class="my_input form-control" type="name"  name="photo" placeholder="6. Прикрепите фото с дефектом товара">
+              <div class="modal-body">
+                <p class="small-text">Как официальный продавец, все наши предлагаемые товары имеют гарантию. 
+                  Мы предлагаем гарантийное обслуживание, собирая затронутые товары по нашей 
+                  стоимости и отправляя их производителю, а также делаем всю дальнейшую 
+                  обработку. Если производитель признает дефект изготовления, все сгенерированные 
+                  затраты на транспортировку, как для обратной отправки, так и для отгрузки 
+                  замененного или отремонтированного изделия, оплачиваются нами. Мы оставляем за 
+                  собой право отказать в обмене товара в случае, если возвращенный товар не прибыл 
+                  в условиях, указанных в нашей политике возврата. Поэтому, как только мы сможем 
+                  получить какой-либо ответ по вашему делу, мы сможем действовать немедленно, как
+                  указано брендом. Мы будем информированы напрямую о том, была ли принята 
+                  гарантия, и если да, когда изготовитель отремонтирует или заменит товар. Для 
+                  обработки вашей гарантии просим вас предоставить нам краткое описание дефекта, а 
+                  также хотя бы одну фотографию, на которой может быть показано повреждение / 
+                  дефект. Картинки можно прикрепить прямо к форме. Как только мы получим любую 
+                  необходимую информацию, мы немедленно свяжемся с вами, чтобы договориться о 
+                  необходимых действиях.</p>
+                <div class="text-left"><span class="mb-1 d-b">УКАЖИТЕ ВАШУ ПРИЧИНУ ДЛЯ ВОЗВРАТА ТОВАРА</span> 
+                  <div class="my_dropdown dropdown-toggle mb-3" data-toggle="dropdown">
+                    <span>Товар не работает или не исправен</span>
+                    <ul class="dropdown-menu my_dropdown_menu">
+                      <li>Товар не работает или не исправен</li>
+                      <li>Товар не работает или не исправен</li>
+                      <li>Товар не работает или не исправен</li>
+                      <li>Товар не работает или не исправен</li>
+                      <li>Товар не работает или не исправен</li>
+                    </ul>
                   </div>
-                  <label for="passportEnter">УКАЖИТЕ ВАШ ПАСПОРТ / ИДЕНТИФИКАЦИОННЫЙ НОМЕР </label><br>
-                  <input class="my_input form-control" type="text" id="passportEnter" name="name">
-                  <button class="my_button btn_green">ОТПРАВИТЬ</button>
                 </div>
-              </form>
+                <form action="">
+                  <div class=" form-group">
+                    <textarea name="message" class="form-textarea my_textarea form-control" placeholder="Пожалуйста, сделайте краткое описание повреждения или дефекта."></textarea>
+                    <div class="flex half-width ">
+                      <input class="my_input form-control" type="name"  name="photo" placeholder="1. Прикрепите фото с дефектом товара">
+                      <input class="my_input form-control" type="name"  name="photo" placeholder="2. Прикрепите фото с дефектом товара">
+                      <input class="my_input form-control" type="name"  name="photo" placeholder="3. Прикрепите фото с дефектом товара">
+                      <input class="my_input form-control" type="name"  name="photo" placeholder="4. Прикрепите фото с дефектом товара">
+                      <input class="my_input form-control" type="name"  name="photo" placeholder="5. Прикрепите фото с дефектом товара">
+                      <input class="my_input form-control" type="name"  name="photo" placeholder="6. Прикрепите фото с дефектом товара">
+                    </div>
+                    <label for="passportEnter">УКАЖИТЕ ВАШ ПАСПОРТ / ИДЕНТИФИКАЦИОННЫЙ НОМЕР </label><br>
+                    <input class="my_input form-control" type="text" id="passportEnter" name="name">
+                    <button class="my_button btn_green">ОТПРАВИТЬ</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            
           </div>
         </div>
         <div class="my_modal  modal fade base_style"  id="purchase_download" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog purchase_download modal_dialog_change" role="document">
-            <div class="text-center"><img src="img/icons/file.png" alt="file"><span>СЧЕТ.PDF Расходная накладная.xls</span></div>
-            <button class="my_button btn_white">СКАЧАТЬ</button>
-            <button class="my_button btn_green">ПОДПИСАТЬ ЭЦП</button>
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="text-center"><img src="img/icons/file.png" alt="file"><span>СЧЕТ.PDF Расходная накладная.xls</span></div>
+                <button class="my_button btn_white">СКАЧАТЬ</button>
+                <button class="my_button btn_green">ПОДПИСАТЬ ЭЦП</button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

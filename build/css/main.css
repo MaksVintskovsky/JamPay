@@ -196,6 +196,21 @@ textarea:-ms-input-placeholder {
     font-size: 13px;
     text-align: justify; }
 
+.my_modal .modal-content {
+  border: none; }
+
+.my_modal .modal-body {
+  border: none;
+  padding: 0; }
+
+.my_modal .modal-header, .my_modal .modal-body {
+  border: none;
+  padding: 0; }
+  .my_modal .modal-header .close, .my_modal .modal-body .close {
+    outline: none;
+    padding: 0px 3px;
+    margin: -15px -17px 0px auto; }
+
 .d-n-mob-span {
   display: none; }
   @media (min-width: 768px) {
@@ -1561,6 +1576,9 @@ body .card {
 
 #purchase_download img {
   margin-right: 10px; }
+
+#purchase_download .close {
+  margin: -13px -10px 0px auto; }
 
 .favorite .basket {
   margin: 0px auto 30px; }
