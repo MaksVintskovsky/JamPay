@@ -1538,7 +1538,7 @@ body .card {
       padding-left: 3px !important;
       margin-bottom: 15px; }
   .purchases .purchase_download {
-    width: 180px;
+    width: 260px;
     padding-bottom: 0; }
   .purchases .accordeon_content .basket-total {
     margin-left: auto;
@@ -1564,6 +1564,8 @@ body .card {
 
 .favorite .basket {
   margin: 0px auto 30px; }
+  .favorite .basket .basket-items {
+    overflow: auto; }
   .favorite .basket button {
     margin: 20px auto; }
 
