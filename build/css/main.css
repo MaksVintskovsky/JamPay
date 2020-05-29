@@ -1584,8 +1584,6 @@ body .card {
   margin: 0px auto 30px; }
   .favorite .basket .basket-items {
     overflow: auto; }
-  .favorite .basket button {
-    margin: 20px auto; }
 
 .favorite .basket-header, .favorite .basket-item-block {
   position: relative; }
@@ -1599,9 +1597,11 @@ body .card {
 .favorite .price_request {
   width: auto; }
 
-.favorite .col-4 label, .favorite .col-5 label {
-  margin: 0 auto;
-  display: block; }
+.favorite .buttons {
+  -webkit-box-pack: justify;
+  justify-content: space-between; }
+  .favorite .buttons button {
+    margin: 10px 0; }
 
 .request_status {
   width: 25px;
