@@ -1585,6 +1585,9 @@ body .card {
 #purchase_download .close {
   margin: -13px -10px 0px auto; }
 
+#purchase_upload .close {
+  margin: -13px -10px 0px auto; }
+
 .favorite .basket {
   margin: 0px auto 30px; }
   .favorite .basket .basket-items {
