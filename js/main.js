@@ -232,3 +232,11 @@ $('.my_button').on('click', function(e){
   console.log(1)
   e.preventDefault()
 })
+
+var textarea = document.querySelector('textarea');
+
+textarea.addEventListener('keyup', function(){
+  if(this.scrollTop > 0){
+    this.style.height = this.scrollHeight + "px";
+  }
+});

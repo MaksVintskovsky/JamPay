@@ -255,7 +255,13 @@
                   <span>ПРОДАВЕЦ: </span> <span class="small-text"> DMG-MORI</span><br>
                   <span>ДОСТАВКА: </span> <span class="small-text"> через Новая Почта</span><br>
                   <span>СПОСОБ ОПЛАТЫ: </span> <span class="small-text"> Кредитная карта</span><br>
-                  <span>ПРИКРЕПЛЕННЫЕ ДОКУМЕНТЫ: </span> <span class="small-text"> Договор.pdf , <span class="cursor" data-toggle="modal" data-target="#purchase_download">Счет.pdf</span> , Расходная накладная.xls , ТТH.doc</span>
+                  <span>ПРИКРЕПЛЕННЫЕ ДОКУМЕНТЫ: </span> 
+                  <span class="small-text documents"> 
+                    <span class=""> Договор.pdf , </span>
+                    <span class="" data-toggle="modal" data-target="#purchase_download"> Счет.pdf , </span>
+                    <span class=""> Расходная накладная.xls , </span>
+                    <span class=""> ТТH.doc</span>
+                  </span>
                 </div>
                 <div class="buttons flex">
                   <button class="my_button btn_green">ДОБАВИТЬ ДОКУМЕНТ</button>
@@ -582,7 +588,7 @@
                 </div>
                 <form action="">
                   <div class=" form-group">
-                    <textarea name="message" class="form-textarea my_textarea form-control" placeholder="Пожалуйста, сделайте краткое описание повреждения или дефекта."></textarea>
+                    <textarea wrap="hard"name="message" class="form-textarea my_textarea form-control" placeholder="Пожалуйста, сделайте краткое описание повреждения или дефекта."></textarea>
                     <div class="flex half-width ">
                       <input class="my_input form-control" type="name"  name="photo" placeholder="1. Прикрепите фото с дефектом товара">
                       <input class="my_input form-control" type="name"  name="photo" placeholder="2. Прикрепите фото с дефектом товара">
@@ -597,16 +603,14 @@
                   </div>
                 </form>
               </div>
-            </div>
-            
+            </div> 
           </div>
         </div>
+
         <div class="my_modal  modal fade base_style"  id="purchase_download" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog purchase_download modal_dialog_change" role="document">
-            
             <div class="modal-content">
               <div class="modal-header">
-                
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -615,26 +619,7 @@
                 <div class="text-center"><img src="img/icons/file.png" alt="file"><span>СЧЕТ.PDF Расходная накладная.xls</span></div>
                 <button class="my_button btn_white">СКАЧАТЬ</button>
                 <button class="my_button btn_green">ПОДПИСАТЬ ЭЦП</button>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button class="my_button btn_gray">УДАЛИТЬ</button>
               </div>
             </div>
           </div>

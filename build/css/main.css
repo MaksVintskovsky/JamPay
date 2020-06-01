@@ -1564,6 +1564,11 @@ body .card {
 
 .purchase_data {
   padding: 20px 0; }
+  .purchase_data .documents span {
+    text-decoration: underline;
+    cursor: pointer; }
+  .purchase_data .documents span:hover {
+    text-decoration: none; }
   .purchase_data span {
     margin-bottom: 3px;
     display: inline-block; }
