@@ -1,11 +1,6 @@
 
 $(document).ready(function(){
 
-
-  // $('.main-slider').bxSlider({
-  //     speed: 300
-  // });
-
   $('.card-slider-top').bxSlider({
     speed: 300,
     controls: false,
@@ -61,13 +56,7 @@ $(document).ready(function(){
       }
     }
   });
-  // $("#secondSliderNext").click(function(){
-  //   $(".second_slider").trigger('next.owl.carousel', [500]);
-  // })
-  // $("#secondSliderPrev").click(function(){
-  //     $(".second_slider").trigger('prev.owl.carousel', [500]);
-  // })
-
+ 
   $('.third_slider').owlCarousel({
     dots: false,
     nav: false,
@@ -149,15 +138,12 @@ $(document).ready(function(){
   $('.close-menu').on('click', function(){
     $('.navigation-mob').hide();
   });
-
-
-
-  // :::::::::::: Popup :::::::::::::
-
-    // :::::::::::: Filter :::::::::::::
-    // :::::::::::: Catalog :::::::::::::
-    
 });
+ // :::::::::::: my_button preventDefaul:::::::::::::
+$('.my_button').on('click', function(e){
+  console.log(1)
+  e.preventDefault()
+})
 
 function show_this_tab(elem) { 
   $(".card-tab").removeClass("active");
@@ -199,13 +185,6 @@ $('.accordeon_head').on('click', function(){
   $(this).next('.accordeon_content').slideToggle(400); 
 });
 
-
-$('.my_button').on('click', function(e){
-  console.log(1)
-  // e.preventDefault()
-})
-
-
 /*::::::::::::: Textarea:::::::::::::*/
 var textarea = document.querySelector('textarea');
 
@@ -213,4 +192,10 @@ textarea.addEventListener('keyup', function(){
   if(this.scrollTop > 0){
     this.style.height = this.scrollHeight + "px";
   }
+});
+
+/*::::::::::::: Добавление названия файла:::::::::::::*/
+$('input[type="file"]').change(function(){
+  var value = $("input[type='file']").val();
+  $('.js-value').text(value);
 });

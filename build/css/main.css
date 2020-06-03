@@ -1,15 +1,3 @@
-@font-face {
-  font-family: 'Oswald';
-  src: url("../../fonts/oswald/Oswaldlight.ttf") format("truetype"), url("../../fonts/oswald/Oswaldlight.woff") format("woff"), url("../../fonts/oswald/Oswaldlight.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Oswald';
-  src: url("../../fonts/oswald/Oswaldregular.ttf") format("truetype"), url("../../fonts/oswald/Oswaldregular.woff") format("woff"), url("../../fonts/oswald/Oswaldregular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal; }
-
 body {
   min-width: 640px; }
 
@@ -1588,19 +1576,10 @@ body .card {
 #purchase_upload .close {
   margin: -13px -10px 0px auto; }
 
-.example-3 {
-  box-sizing: border-box; }
+.uppload_btn {
+  position: relative; }
 
-.example-3 {
-  position: relative;
-  font-weight: 400;
-  max-width: 25em;
-  padding: 1em; }
-
-.example-3 h2 {
-  font-weight: 400; }
-
-.example-3 .filupp > input[type="file"] {
+.uppload_btn .filupp > input[type="file"] {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1610,29 +1589,24 @@ body .card {
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-.example-3 .filupp {
+.uppload_btn .filupp {
   position: relative;
-  background: transparent;
   display: block;
-  padding: 1em;
-  font-size: 1em;
   width: 100%;
-  height: 3.5em;
-  cursor: pointer;
-  z-index: 10; }
+  cursor: pointer; }
 
-.example-3 .my_button {
+.uppload_btn .my_button {
   z-index: -10;
   position: absolute; }
 
-.example-3 .uppload_btn {
+.uppload_btn img {
   width: 158px;
   margin: 0 auto;
   display: block; }
 
-.example-3 .filupp-file-name {
-  width: 75%;
-  display: inline-block;
+.uppload_btn .filupp-file-name {
+  margin: 5px auto 10px;
+  display: block;
   max-width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
