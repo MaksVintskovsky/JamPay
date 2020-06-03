@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 
     <link rel="shortcut icon" href="img/header/logo.png"  type="image/x-icon" />
-    
+
     <!-- Fonts -->
     <link rel="stylesheet" href="/fonts/oswald/oswald.css" />
 
@@ -438,7 +438,7 @@
                     <label for="custom_file_upload" class="filupp">
                       <img class="" src="img/buttons/uppload.png" alt="file">
                       <span class="filupp-file-name js-value text-center">Файл не выбран</span>
-                      <input type="file" name="attachment-file" value="1" id="custom_file_upload">
+                      <input type="file" name="attachment-file" value="1" id="custom_file_upload" onchange = "addFileName();">
                     </label>
                   </div>
                   <button class="my_button btn_green">ЗАГРУЗИТЬ</button>

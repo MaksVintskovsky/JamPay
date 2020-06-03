@@ -197,7 +197,8 @@ textarea:-ms-input-placeholder {
   .my_modal .modal-header .close, .my_modal .modal-body .close {
     outline: none;
     padding: 0px 3px;
-    margin: -15px -17px 0px auto; }
+    margin: -15px -17px 0px auto;
+    font-family: 'Oswald', sans-serif; }
 
 .d-n-mob-span {
   display: none; }

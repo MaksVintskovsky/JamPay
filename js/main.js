@@ -195,7 +195,8 @@ textarea.addEventListener('keyup', function(){
 });
 
 /*::::::::::::: Добавление названия файла:::::::::::::*/
-$('input[type="file"]').change(function(){
+
+function addFileName(){
   var value = $("input[type='file']").val();
   $('.js-value').text(value);
-});
+};
