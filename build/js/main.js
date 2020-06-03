@@ -202,7 +202,7 @@ $('.accordeon_head').on('click', function(){
 
 $('.my_button').on('click', function(e){
   console.log(1)
-  e.preventDefault()
+  // e.preventDefault()
 })
 
 

@@ -1588,6 +1588,57 @@ body .card {
 #purchase_upload .close {
   margin: -13px -10px 0px auto; }
 
+.example-3 {
+  box-sizing: border-box; }
+
+.example-3 {
+  position: relative;
+  font-weight: 400;
+  max-width: 25em;
+  padding: 1em; }
+
+.example-3 h2 {
+  font-weight: 400; }
+
+.example-3 .filupp > input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.example-3 .filupp {
+  position: relative;
+  background: transparent;
+  display: block;
+  padding: 1em;
+  font-size: 1em;
+  width: 100%;
+  height: 3.5em;
+  cursor: pointer;
+  z-index: 10; }
+
+.example-3 .my_button {
+  z-index: -10;
+  position: absolute; }
+
+.example-3 .uppload_btn {
+  width: 158px;
+  margin: 0 auto;
+  display: block; }
+
+.example-3 .filupp-file-name {
+  width: 75%;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal; }
+
 .favorite .basket {
   margin: 0px auto 30px; }
   .favorite .basket .basket-items {
