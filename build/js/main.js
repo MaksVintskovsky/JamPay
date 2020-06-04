@@ -134,14 +134,15 @@ $(document).ready(function(){
       $('.search-img').show();
     }
   });
+
     // :::::::::::: Menu :::::::::::::
   $('.close-menu').on('click', function(){
     $('.navigation-mob').hide();
   });
 });
+
  // :::::::::::: my_button preventDefaul:::::::::::::
 $('.my_button').on('click', function(e){
-  console.log(1)
   e.preventDefault()
 })
 
@@ -159,11 +160,9 @@ function close_cab(){
   $('.cab-dropdown').hide();
 };
 function close_modal_change(e){
-  // e.preventDefault();
   $('#my_fucking_modal').hide(200);
 };
 function open_modal(event){
-  // event.preventDefault();
   $('.modal-change').show(200);
 };
 
@@ -187,7 +186,6 @@ $('.accordeon_head').on('click', function(){
 
 /*::::::::::::: Textarea:::::::::::::*/
 var textarea = document.querySelector('textarea');
-
 textarea.addEventListener('keyup', function(){
   if(this.scrollTop > 0){
     this.style.height = this.scrollHeight + "px";
@@ -195,7 +193,6 @@ textarea.addEventListener('keyup', function(){
 });
 
 /*::::::::::::: Добавление названия файла:::::::::::::*/
-
 function addFileName(){
   var value = $("input[type='file']").val();
   $('.js-value').text(value);
