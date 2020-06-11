@@ -16,7 +16,10 @@
     <!-- Bootstrap, CSS -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
-
+    <!-- <link rel="stylesheet" href="libs/bootstrap3.css"> -->
+    <link rel="stylesheet" href="libs/datepicker.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"> -->
+    
     <link rel="shortcut icon" href="img/header/logo.png"  type="image/x-icon" />
     
     <!-- Fonts -->
@@ -344,7 +347,29 @@
             <div class="row">
               <div class="col-6">
                 <label class="text-left d-b">ДАТА И ВРЕМЯ
-                  <input type="name" name="name" class="my_input form-control" placeholder="20/02/2020 12:20:59">
+                  <!-- <div class='col-sm-6'> -->
+                  <input type='text' class="form-control my_input date" id='datetimepicker4'>
+                  <!-- </div> -->
+                  
+
+                  <div class="container">
+                    <div class="row">
+                        <div class='col-sm-12'>
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                           
+                        </script>
+                    </div>
+                </div>
+                  <!-- <input type="name" name="name" class="my_input form-control" placeholder="20/02/2020 12:20:59"> -->
                 </label>
               </div>
               <div class="col-6">
@@ -443,6 +468,7 @@
 
     <script src="libs/jquery-3.4.1.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="libs/moment.js"></script>
     <!-- <script src="libs/bxSlider/jquery.bxslider.min.js"></script> -->
     <script src="libs/bxSlider/jquery.bxslider.js"></script>
     <script src='libs/OwlCarousel/owl.carousel.min.js'></script>
@@ -452,6 +478,11 @@
     crossorigin="anonymous"></script>
 
     <script src='libs/bootstrap.min.js'></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src='libs/bootstrap-datepicker.js'></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script> -->
     <script src='build/js/main.js'></script>
   </body>
 </html>

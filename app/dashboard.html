@@ -16,7 +16,10 @@
     <!-- Bootstrap, CSS -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
-
+    <!-- <link rel="stylesheet" href="libs/bootstrap3.css"> -->
+    <link rel="stylesheet" href="libs/datepicker.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"> -->
+    
     <link rel="shortcut icon" href="img/header/logo.png"  type="image/x-icon" />
     
     <!-- Fonts -->
@@ -139,7 +142,29 @@
             <div class="row">
               <div class="col-6">
                 <label class="text-left d-b">ДАТА И ВРЕМЯ
-                  <input type="name" name="name" class="my_input form-control" placeholder="20/02/2020 12:20:59">
+                  <!-- <div class='col-sm-6'> -->
+                  <input type='text' class="form-control my_input date" id='datetimepicker4'>
+                  <!-- </div> -->
+                  
+
+                  <div class="container">
+                    <div class="row">
+                        <div class='col-sm-12'>
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                           
+                        </script>
+                    </div>
+                </div>
+                  <!-- <input type="name" name="name" class="my_input form-control" placeholder="20/02/2020 12:20:59"> -->
                 </label>
               </div>
               <div class="col-6">

@@ -1,6 +1,10 @@
 
 $(document).ready(function(){
 
+  
+  $('#datetimepicker1').datetimepicker();
+  $('#datetimepicker4').datetimepicker();
+
   $('.card-slider-top').bxSlider({
     speed: 300,
     controls: false,
@@ -149,7 +153,6 @@ $('.my_button').on('click', function(e){
 function show_this_tab(elem) { 
   $(".card-tab").removeClass("active");
   $(elem).addClass("active");
-  // return false;
 };
 function hide_search(){
   $('.search-input').show().focus();
@@ -197,3 +200,13 @@ function addFileName(){
   var value = $("input[type='file']").val();
   $('.js-value').text(value);
 };
+
+
+
+$('#datetimepicker1').datetimepicker();
+$('#datetimepicker4').datetimepicker();
+
+
+$(function () {
+  $('#datetimepicker1').datetimepicker();
+});
