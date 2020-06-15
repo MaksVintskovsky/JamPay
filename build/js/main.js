@@ -2,8 +2,8 @@
 $(document).ready(function(){
 
   
-  $('#datetimepicker1').datetimepicker();
-  $('#datetimepicker4').datetimepicker();
+  // $('#datetimepicker1').datetimepicker();
+  // $('#datetimepicker4').datetimepicker();
 
   $('.card-slider-top').bxSlider({
     speed: 300,
@@ -203,10 +203,11 @@ function addFileName(){
 
 
 
-$('#datetimepicker1').datetimepicker();
-$('#datetimepicker4').datetimepicker();
+// $('#datetimepicker1').datetimepicker();
+// $('#datetimepicker4').datetimepicker();
 
 
 $(function () {
   $('#datetimepicker1').datetimepicker();
+  $('#datetimepicker5').datetimepicker();
 });
